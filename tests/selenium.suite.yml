@@ -3,10 +3,10 @@ modules:
     enabled:
         - \Helper\Selenium
         - WebDriver:
-             url: 'http://localhost/~hab/test/web/app_dev.php'
+             url: ''
              browser: firefox
              window_size: 1024x768
-             wait: 10
+             wait: 5
              capabilities:
                  unexpectedAlertBehaviour: 'accept'
                 

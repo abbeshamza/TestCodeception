@@ -19,7 +19,9 @@ class CodeceptionPhpunitTest extends \Codeception\TestCase\Test
     // tests
     public function testMe()
     {
-        $this->assertTrue(true);
+        $name= "testMe";
+        //$this->assertTrue(true);
+        $this->assertEquals("tesstMe",$name);
 
     }
 }
