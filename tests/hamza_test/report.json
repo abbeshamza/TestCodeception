@@ -1,0 +1,53 @@
+{
+    "event": "suiteStart",
+    "suite": "unit",
+    "tests": 2
+}{
+    "event": "testStart",
+    "suite": "unit",
+    "test": "CodeceptionPhpunitTest::testMe"
+}{
+    "event": "test",
+    "suite": "unit",
+    "test": "CodeceptionPhpunitTest::testMe",
+    "status": "fail",
+    "time": 0.0088458061218262,
+    "trace": [
+        {
+            "file": "\/home\/hab\/public_html\/test\/tests\/unit\/CodeceptionPhpunitTest.php",
+            "line": 24,
+            "function": "assertEquals",
+            "class": "PHPUnit_Framework_Assert",
+            "type": "::",
+            "args": [
+                "tesstMe",
+                "testMe"
+            ]
+        },
+        {
+            "function": "testMe",
+            "class": "CodeceptionPhpunitTest",
+            "type": "->",
+            "args": [
+
+            ]
+        }
+    ],
+    "message": "Failed asserting that two strings are equal.",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "unit",
+    "test": "PhpunitTest::testMe"
+}{
+    "event": "test",
+    "suite": "unit",
+    "test": "PhpunitTest::testMe",
+    "status": "pass",
+    "time": 0.0011777877807617,
+    "trace": [
+
+    ],
+    "message": "",
+    "output": ""
+}

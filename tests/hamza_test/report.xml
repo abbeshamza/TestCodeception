@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="unit" tests="2" assertions="1" failures="1" errors="0" time="0.007085">
+    <testcase name="testMe" class="CodeceptionPhpunitTest" file="/home/hab/public_html/test/tests/unit/CodeceptionPhpunitTest.php" feature="test me" assertions="1" time="0.004955">
+      <failure type="PHPUnit_Framework_ExpectationFailedException">CodeceptionPhpunitTest::testMe
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'tesstMe'
++'testMe'
+
+/home/hab/public_html/test/tests/unit/CodeceptionPhpunitTest.php:24
+</failure>
+    </testcase>
+    <testcase name="testMe" class="PhpunitTest" file="/home/hab/public_html/test/tests/unit/PhpunitTest.php" line="14" assertions="0" time="0.002130"/>
+  </testsuite>
+</testsuites>

@@ -1,7 +1,9 @@
+
 actor: Tester
+
 paths:
-    tests: tests
-    log: tests/_output
+    tests: tests ##"%dossier_tests%"
+    log: tests/hamza_test ##"%dossier_out%"
     data: tests/_data
     support: tests/_support
     envs: tests/_envs
@@ -13,7 +15,11 @@ extensions:
     enabled:
         - Codeception\Extension\RunFailed
 modules:
+    enabled: [Symfony2]
     config:
+        Symfony2:
+            app_path: 'app/front'
+            environment: 'local_test'
         Db:
             dsn: ''
             user: ''
