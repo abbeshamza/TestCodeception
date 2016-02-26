@@ -4,7 +4,7 @@ fondative_test:
 
 test:
     resource: "@TestBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /api
 
 app:
     resource: "@AppBundle/Controller/"

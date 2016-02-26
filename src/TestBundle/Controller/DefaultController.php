@@ -18,8 +18,8 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-      
-        return $this->render('TestBundle:Default:index.html.twig');
+      return array('hello' => 'world');
+       // return $this->render('TestBundle:Default:index.html.twig');
     }
 
 
@@ -66,6 +66,10 @@ class DefaultController extends Controller
 
         */
 
+/*
+
+------------------------------------------ run a commande from the browser ----------------------------------
+
 
 $process = new Process('cd .. ;  bin/codecept run unit --report');
 var_dump($process);
@@ -77,8 +81,9 @@ throw new ProcessFailedException($process);
 //echo $process->getOutput();
 return new Response( $process->getOutput());
 
-
-
+*/
+echo "hello hamza";
+return array('hello' => 'world');
 
 
 
