@@ -18,8 +18,8 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-      return array('hello' => 'world');
-       // return $this->render('TestBundle:Default:index.html.twig');
+      //return array('hello' => 'world');
+        return $this->render('TestBundle:Default:index.html.twig');
     }
 
 
