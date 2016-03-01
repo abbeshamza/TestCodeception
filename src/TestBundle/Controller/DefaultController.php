@@ -19,6 +19,18 @@ class DefaultController extends Controller
     public function indexAction()
     {
       //return array('hello' => 'world');
+      echo"hamza";
+      echo"abbes";
+
+      echo"hamza";
+      echo"abbes";
+
+      echo"hamza";
+      echo"abbes";
+      
+      echo"hamza";
+      echo"abbes";
+
         return $this->render('TestBundle:Default:index.html.twig');
     }
 
