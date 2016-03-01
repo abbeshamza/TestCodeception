@@ -1,6 +1,6 @@
 <?php
 
-/* @WebProfiler/Profiler/toolbar_item.html.twig */
+/* WebProfilerBundle:Profiler:toolbar_item.html.twig */
 class __TwigTemplate_7c1268410345a7f9e94116a933a30ea927590b55afb0e580e06aaf79a3b54001 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,8 +15,8 @@ class __TwigTemplate_7c1268410345a7f9e94116a933a30ea927590b55afb0e580e06aaf79a3b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_7889cdbcb53bb3399214ab11c015ce96bc2cbdf061c61b4280e63ed83a289447 = $this->env->getExtension("native_profiler");
-        $__internal_7889cdbcb53bb3399214ab11c015ce96bc2cbdf061c61b4280e63ed83a289447->enter($__internal_7889cdbcb53bb3399214ab11c015ce96bc2cbdf061c61b4280e63ed83a289447_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/toolbar_item.html.twig"));
+        $__internal_7f96e810422a0789621c5daba5420107ea9541647276532db612f1a85bb5c44f = $this->env->getExtension("native_profiler");
+        $__internal_7f96e810422a0789621c5daba5420107ea9541647276532db612f1a85bb5c44f->enter($__internal_7f96e810422a0789621c5daba5420107ea9541647276532db612f1a85bb5c44f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "WebProfilerBundle:Profiler:toolbar_item.html.twig"));
 
         // line 1
         echo "<div class=\"sf-toolbar-block sf-toolbar-block-";
@@ -28,7 +28,7 @@ class __TwigTemplate_7c1268410345a7f9e94116a933a30ea927590b55afb0e580e06aaf79a3b
         echo "\">
     ";
         // line 2
-        if ((isset($context["link"]) ? $context["link"] : $this->getContext($context, "link"))) {
+        if (((array_key_exists("link", $context)) ? (_twig_default_filter((isset($context["link"]) ? $context["link"] : $this->getContext($context, "link")), true)) : (true))) {
             echo "<a href=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("_profiler", array("token" => (isset($context["token"]) ? $context["token"] : $this->getContext($context, "token")), "panel" => (isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")))), "html", null, true);
             echo "\">";
@@ -39,7 +39,7 @@ class __TwigTemplate_7c1268410345a7f9e94116a933a30ea927590b55afb0e580e06aaf79a3b
         echo "</div>
     ";
         // line 4
-        if ((isset($context["link"]) ? $context["link"] : $this->getContext($context, "link"))) {
+        if (((array_key_exists("link", $context)) ? (_twig_default_filter((isset($context["link"]) ? $context["link"] : $this->getContext($context, "link")), true)) : (true))) {
             echo "</a>";
         }
         // line 5
@@ -49,13 +49,13 @@ class __TwigTemplate_7c1268410345a7f9e94116a933a30ea927590b55afb0e580e06aaf79a3b
 </div>
 ";
         
-        $__internal_7889cdbcb53bb3399214ab11c015ce96bc2cbdf061c61b4280e63ed83a289447->leave($__internal_7889cdbcb53bb3399214ab11c015ce96bc2cbdf061c61b4280e63ed83a289447_prof);
+        $__internal_7f96e810422a0789621c5daba5420107ea9541647276532db612f1a85bb5c44f->leave($__internal_7f96e810422a0789621c5daba5420107ea9541647276532db612f1a85bb5c44f_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "@WebProfiler/Profiler/toolbar_item.html.twig";
+        return "WebProfilerBundle:Profiler:toolbar_item.html.twig";
     }
 
     public function isTraitable()
@@ -69,9 +69,9 @@ class __TwigTemplate_7c1268410345a7f9e94116a933a30ea927590b55afb0e580e06aaf79a3b
     }
 }
 /* <div class="sf-toolbar-block sf-toolbar-block-{{ name }} sf-toolbar-status-{{ status|default('normal') }} {{ additional_classes|default('') }}">*/
-/*     {% if link %}<a href="{{ path('_profiler', { token: token, panel: name }) }}">{% endif %}*/
+/*     {% if link|default(true) %}<a href="{{ path('_profiler', { token: token, panel: name }) }}">{% endif %}*/
 /*         <div class="sf-toolbar-icon">{{ icon|default('') }}</div>*/
-/*     {% if link %}</a>{% endif %}*/
+/*     {% if link|default(true) %}</a>{% endif %}*/
 /*         <div class="sf-toolbar-info">{{ text|default('') }}</div>*/
 /* </div>*/
 /* */

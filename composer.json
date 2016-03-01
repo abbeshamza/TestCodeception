@@ -18,7 +18,20 @@
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "~2.0",
         "friendsofsymfony/rest-bundle": "^1.7",
-        "jms/serializer-bundle": "^1.1"
+        "jms/serializer-bundle": "^1.1",
+
+
+
+         "phpunit/phpunit": "~4.7.0",
+        "phpmd/phpmd": "^2.2",
+        "squizlabs/php_codesniffer": "^2.3",
+        "sebastian/phpcpd": "^2.0",
+        "phploc/phploc": "^2.1",
+        "pdepend/pdepend": "^2.1",
+   
+        "symfony/browser-kit": "^2.7",
+        "symfony/css-selector": "^2.7",
+        "phing/phing": "^2.12"
         
     },
     "require-dev": {

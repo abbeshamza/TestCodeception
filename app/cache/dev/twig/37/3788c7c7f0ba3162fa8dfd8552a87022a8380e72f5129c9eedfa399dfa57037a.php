@@ -1,6 +1,6 @@
 <?php
 
-/* @WebProfiler/Profiler/base_js.html.twig */
+/* WebProfilerBundle:Profiler:base_js.html.twig */
 class __TwigTemplate_121ddb5906269056fb796e6346fcffc9abb1b7bf648b06686c07fea770af79bd extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,8 +15,8 @@ class __TwigTemplate_121ddb5906269056fb796e6346fcffc9abb1b7bf648b06686c07fea770a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_822a1a8483cf9ac028722968cd501254732d75bcd58b2d4033f780b2c57a86dc = $this->env->getExtension("native_profiler");
-        $__internal_822a1a8483cf9ac028722968cd501254732d75bcd58b2d4033f780b2c57a86dc->enter($__internal_822a1a8483cf9ac028722968cd501254732d75bcd58b2d4033f780b2c57a86dc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/base_js.html.twig"));
+        $__internal_fca198284b910e17b1a97f61b3ec81ce181333d0e99b7c240463c0f7e3f0de56 = $this->env->getExtension("native_profiler");
+        $__internal_fca198284b910e17b1a97f61b3ec81ce181333d0e99b7c240463c0f7e3f0de56->enter($__internal_fca198284b910e17b1a97f61b3ec81ce181333d0e99b7c240463c0f7e3f0de56_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "WebProfilerBundle:Profiler:base_js.html.twig"));
 
         // line 1
         echo "<script>/*<![CDATA[*/
@@ -121,7 +121,7 @@ class __TwigTemplate_121ddb5906269056fb796e6346fcffc9abb1b7bf648b06686c07fea770a
                             var request = requestStack[i];
 
                             var row = document.createElement('tr');
-                            rows.appendChild(row);
+                            rows.insertBefore(row, rows.firstChild);
 
                             var methodCell = document.createElement('td');
                             if (request.error) {
@@ -260,7 +260,7 @@ class __TwigTemplate_121ddb5906269056fb796e6346fcffc9abb1b7bf648b06686c07fea770a
             echo ");
                     }
 
-                    if (path.substr(0, 1) === '/' && !path.match(new RegExp(";
+                    if (!path.match(new RegExp(";
             // line 228
             echo twig_jsonencode_filter((isset($context["excluded_ajax_paths"]) ? $context["excluded_ajax_paths"] : $this->getContext($context, "excluded_ajax_paths")));
             echo "))) {
@@ -474,13 +474,13 @@ class __TwigTemplate_121ddb5906269056fb796e6346fcffc9abb1b7bf648b06686c07fea770a
 /*]]>*/</script>
 ";
         
-        $__internal_822a1a8483cf9ac028722968cd501254732d75bcd58b2d4033f780b2c57a86dc->leave($__internal_822a1a8483cf9ac028722968cd501254732d75bcd58b2d4033f780b2c57a86dc_prof);
+        $__internal_fca198284b910e17b1a97f61b3ec81ce181333d0e99b7c240463c0f7e3f0de56->leave($__internal_fca198284b910e17b1a97f61b3ec81ce181333d0e99b7c240463c0f7e3f0de56_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "@WebProfiler/Profiler/base_js.html.twig";
+        return "WebProfilerBundle:Profiler:base_js.html.twig";
     }
 
     public function isTraitable()
@@ -596,7 +596,7 @@ class __TwigTemplate_121ddb5906269056fb796e6346fcffc9abb1b7bf648b06686c07fea770a
 /*                             var request = requestStack[i];*/
 /* */
 /*                             var row = document.createElement('tr');*/
-/*                             rows.appendChild(row);*/
+/*                             rows.insertBefore(row, rows.firstChild);*/
 /* */
 /*                             var methodCell = document.createElement('td');*/
 /*                             if (request.error) {*/
@@ -720,7 +720,7 @@ class __TwigTemplate_121ddb5906269056fb796e6346fcffc9abb1b7bf648b06686c07fea770a
 /*                         path = url.substr({{ (request.schemeAndHttpHost ~ request.basePath)|length }});*/
 /*                     }*/
 /* */
-/*                     if (path.substr(0, 1) === '/' && !path.match(new RegExp({{ excluded_ajax_paths|json_encode|raw }}))) {*/
+/*                     if (!path.match(new RegExp({{ excluded_ajax_paths|json_encode|raw }}))) {*/
 /*                         var stackElement = {*/
 /*                             loading: true,*/
 /*                             error: false,*/

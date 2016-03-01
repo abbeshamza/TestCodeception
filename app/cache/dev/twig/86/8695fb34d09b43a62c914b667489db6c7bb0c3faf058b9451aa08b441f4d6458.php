@@ -1,6 +1,6 @@
 <?php
 
-/* @WebProfiler/Profiler/toolbar.css.twig */
+/* WebProfilerBundle:Profiler:toolbar.css.twig */
 class __TwigTemplate_bc77a21881d78410a70eea1435dfa7ff946436208fb23ee5f530ea9104103cfd extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,8 +15,8 @@ class __TwigTemplate_bc77a21881d78410a70eea1435dfa7ff946436208fb23ee5f530ea91041
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_53e48a91b22fc8dbeb52fd7d48aa131c7fe02741dde1c65d8199b41f9e89fc4a = $this->env->getExtension("native_profiler");
-        $__internal_53e48a91b22fc8dbeb52fd7d48aa131c7fe02741dde1c65d8199b41f9e89fc4a->enter($__internal_53e48a91b22fc8dbeb52fd7d48aa131c7fe02741dde1c65d8199b41f9e89fc4a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/toolbar.css.twig"));
+        $__internal_2ba316e7c558e62b5ffa67780c538f7dd3b77a1809095466f472a61120e61ba6 = $this->env->getExtension("native_profiler");
+        $__internal_2ba316e7c558e62b5ffa67780c538f7dd3b77a1809095466f472a61120e61ba6->enter($__internal_2ba316e7c558e62b5ffa67780c538f7dd3b77a1809095466f472a61120e61ba6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "WebProfilerBundle:Profiler:toolbar.css.twig"));
 
         // line 2
         $context["colors"] = array("success" => "#4F805D", "warning" => "#A46A1F", "error" => "#B0413E");
@@ -66,7 +66,12 @@ class __TwigTemplate_bc77a21881d78410a70eea1435dfa7ff946436208fb23ee5f530ea91041
     position: fixed;
     right: 0;
     text-align: left;
+    text-transform: none;
     z-index: 99999;
+
+    /* neutralize the aliasing defined by external CSS styles */
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
 }
 .sf-toolbarreset abbr {
     border: dashed #777;
@@ -74,13 +79,11 @@ class __TwigTemplate_bc77a21881d78410a70eea1435dfa7ff946436208fb23ee5f530ea91041
 }
 .sf-toolbarreset svg,
 .sf-toolbarreset img {
-    max-height: 20px;
-    max-width: 20px;
+    height: 20px;
 }
 
 .sf-toolbarreset .hide-button {
     background: #444;
-    cursor: pointer;
     display: block;
     position: absolute;
     top: 0;
@@ -215,40 +218,40 @@ class __TwigTemplate_bc77a21881d78410a70eea1435dfa7ff946436208fb23ee5f530ea91041
 
 .sf-toolbar-block .sf-toolbar-status-green {
     background-color: ";
-        // line 196
+        // line 199
         echo $this->getAttribute((isset($context["colors"]) ? $context["colors"] : $this->getContext($context, "colors")), "success", array());
         echo ";
 }
 .sf-toolbar-block .sf-toolbar-status-red {
     background-color: ";
-        // line 199
+        // line 202
         echo $this->getAttribute((isset($context["colors"]) ? $context["colors"] : $this->getContext($context, "colors")), "error", array());
         echo ";
 }
 .sf-toolbar-block .sf-toolbar-status-yellow {
     background-color: ";
-        // line 202
+        // line 205
         echo $this->getAttribute((isset($context["colors"]) ? $context["colors"] : $this->getContext($context, "colors")), "warning", array());
         echo ";
 }
 
 .sf-toolbar-block.sf-toolbar-status-green {
     background-color: ";
-        // line 206
+        // line 209
         echo $this->getAttribute((isset($context["colors"]) ? $context["colors"] : $this->getContext($context, "colors")), "success", array());
         echo ";
     color: #FFF;
 }
 .sf-toolbar-block.sf-toolbar-status-red {
     background-color: ";
-        // line 210
+        // line 213
         echo $this->getAttribute((isset($context["colors"]) ? $context["colors"] : $this->getContext($context, "colors")), "error", array());
         echo ";
     color: #FFF;
 }
 .sf-toolbar-block.sf-toolbar-status-yellow {
     background-color: ";
-        // line 214
+        // line 217
         echo $this->getAttribute((isset($context["colors"]) ? $context["colors"] : $this->getContext($context, "colors")), "warning", array());
         echo ";
     color: #FFF;
@@ -405,9 +408,9 @@ class __TwigTemplate_bc77a21881d78410a70eea1435dfa7ff946436208fb23ee5f530ea91041
 
 /* Override the setting when the toolbar is on the top */
 ";
-        // line 368
+        // line 371
         if (((isset($context["position"]) ? $context["position"] : $this->getContext($context, "position")) == "top")) {
-            // line 369
+            // line 372
             echo "    .sf-minitoolbar {
         border-bottom-left-radius: 4px;
         border-top-left-radius: 0;
@@ -428,18 +431,18 @@ class __TwigTemplate_bc77a21881d78410a70eea1435dfa7ff946436208fb23ee5f530ea91041
     }
 ";
         }
-        // line 388
+        // line 391
         echo "
 ";
-        // line 389
+        // line 392
         if ( !(isset($context["floatable"]) ? $context["floatable"] : $this->getContext($context, "floatable"))) {
-            // line 390
+            // line 393
             echo "    .sf-toolbarreset {
         position: static;
     }
 ";
         }
-        // line 394
+        // line 397
         echo "
 /* Responsive Design */
 .sf-toolbar-icon .sf-toolbar-label,
@@ -472,9 +475,6 @@ class __TwigTemplate_bc77a21881d78410a70eea1435dfa7ff946436208fb23ee5f530ea91041
     .sf-toolbar-block .sf-toolbar-icon img,
     .sf-toolbar-block .sf-toolbar-icon svg {
         top: 6px;
-    }
-    .sf-toolbar-block-config:hover .sf-toolbar-info {
-        right: 0;
     }
     .sf-toolbar-block-time .sf-toolbar-icon svg,
     .sf-toolbar-block-memory .sf-toolbar-icon svg {
@@ -536,13 +536,13 @@ class __TwigTemplate_bc77a21881d78410a70eea1435dfa7ff946436208fb23ee5f530ea91041
 }
 ";
         
-        $__internal_53e48a91b22fc8dbeb52fd7d48aa131c7fe02741dde1c65d8199b41f9e89fc4a->leave($__internal_53e48a91b22fc8dbeb52fd7d48aa131c7fe02741dde1c65d8199b41f9e89fc4a_prof);
+        $__internal_2ba316e7c558e62b5ffa67780c538f7dd3b77a1809095466f472a61120e61ba6->leave($__internal_2ba316e7c558e62b5ffa67780c538f7dd3b77a1809095466f472a61120e61ba6_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "@WebProfiler/Profiler/toolbar.css.twig";
+        return "WebProfilerBundle:Profiler:toolbar.css.twig";
     }
 
     public function isTraitable()
@@ -552,7 +552,7 @@ class __TwigTemplate_bc77a21881d78410a70eea1435dfa7ff946436208fb23ee5f530ea91041
 
     public function getDebugInfo()
     {
-        return array (  443 => 394,  437 => 390,  435 => 389,  432 => 388,  411 => 369,  409 => 368,  252 => 214,  245 => 210,  238 => 206,  231 => 202,  225 => 199,  219 => 196,  24 => 3,  22 => 2,);
+        return array (  446 => 397,  440 => 393,  438 => 392,  435 => 391,  414 => 372,  412 => 371,  255 => 217,  248 => 213,  241 => 209,  234 => 205,  228 => 202,  222 => 199,  24 => 3,  22 => 2,);
     }
 }
 /* {# when updating any of these colors, do the same in profiler.css.twig #}*/
@@ -602,7 +602,12 @@ class __TwigTemplate_bc77a21881d78410a70eea1435dfa7ff946436208fb23ee5f530ea91041
 /*     position: fixed;*/
 /*     right: 0;*/
 /*     text-align: left;*/
+/*     text-transform: none;*/
 /*     z-index: 99999;*/
+/* */
+/*     /* neutralize the aliasing defined by external CSS styles *//* */
+/*     -webkit-font-smoothing: subpixel-antialiased;*/
+/*     -moz-osx-font-smoothing: auto;*/
 /* }*/
 /* .sf-toolbarreset abbr {*/
 /*     border: dashed #777;*/
@@ -610,13 +615,11 @@ class __TwigTemplate_bc77a21881d78410a70eea1435dfa7ff946436208fb23ee5f530ea91041
 /* }*/
 /* .sf-toolbarreset svg,*/
 /* .sf-toolbarreset img {*/
-/*     max-height: 20px;*/
-/*     max-width: 20px;*/
+/*     height: 20px;*/
 /* }*/
 /* */
 /* .sf-toolbarreset .hide-button {*/
 /*     background: #444;*/
-/*     cursor: pointer;*/
 /*     display: block;*/
 /*     position: absolute;*/
 /*     top: 0;*/
@@ -980,9 +983,6 @@ class __TwigTemplate_bc77a21881d78410a70eea1435dfa7ff946436208fb23ee5f530ea91041
 /*     .sf-toolbar-block .sf-toolbar-icon img,*/
 /*     .sf-toolbar-block .sf-toolbar-icon svg {*/
 /*         top: 6px;*/
-/*     }*/
-/*     .sf-toolbar-block-config:hover .sf-toolbar-info {*/
-/*         right: 0;*/
 /*     }*/
 /*     .sf-toolbar-block-time .sf-toolbar-icon svg,*/
 /*     .sf-toolbar-block-memory .sf-toolbar-icon svg {*/
