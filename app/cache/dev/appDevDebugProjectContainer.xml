@@ -21,6 +21,7 @@
       <parameter key="TestBundle">TestBundle\TestBundle</parameter>
       <parameter key="FondativeTestBundle">FondativeTestBundle\FondativeTestBundle</parameter>
       <parameter key="ProjectBundle">ProjectBundle\ProjectBundle</parameter>
+      <parameter key="ReportingBundle">ReportingBundle\ReportingBundle</parameter>
       <parameter key="DebugBundle">Symfony\Bundle\DebugBundle\DebugBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
@@ -1919,7 +1920,7 @@
       <argument type="collection">
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>56d6b8b7bef561.43459984</argument>
+            <argument>56d701e245fd72.30646020</argument>
           </service>
         </argument>
       </argument>
@@ -2048,7 +2049,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>56d6b8b7bef561.43459984</argument>
+            <argument>56d701e245fd72.30646020</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -3395,6 +3396,10 @@
         <argument>Project</argument>
       </call>
       <call method="addPath">
+        <argument>/home/hab/public_html/test/src/ReportingBundle/Resources/views</argument>
+        <argument>Reporting</argument>
+      </call>
+      <call method="addPath">
         <argument>/home/hab/public_html/test/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
         <argument>Debug</argument>
       </call>
@@ -3527,6 +3532,7 @@
                       <argument key="TestBundle">/home/hab/public_html/test/src/TestBundle/Resources/config/serializer</argument>
                       <argument key="FondativeTestBundle">/home/hab/public_html/test/src/FondativeTestBundle/Resources/config/serializer</argument>
                       <argument key="ProjectBundle">/home/hab/public_html/test/src/ProjectBundle/Resources/config/serializer</argument>
+                      <argument key="ReportingBundle">/home/hab/public_html/test/src/ReportingBundle/Resources/config/serializer</argument>
                       <argument key="Symfony\Bundle\DebugBundle">/home/hab/public_html/test/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/config/serializer</argument>
                       <argument key="Symfony\Bundle\WebProfilerBundle">/home/hab/public_html/test/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/config/serializer</argument>
                       <argument key="Sensio\Bundle\DistributionBundle">/home/hab/public_html/test/vendor/sensio/distribution-bundle/Resources/config/serializer</argument>
@@ -3554,6 +3560,7 @@
                       <argument key="TestBundle">/home/hab/public_html/test/src/TestBundle/Resources/config/serializer</argument>
                       <argument key="FondativeTestBundle">/home/hab/public_html/test/src/FondativeTestBundle/Resources/config/serializer</argument>
                       <argument key="ProjectBundle">/home/hab/public_html/test/src/ProjectBundle/Resources/config/serializer</argument>
+                      <argument key="ReportingBundle">/home/hab/public_html/test/src/ReportingBundle/Resources/config/serializer</argument>
                       <argument key="Symfony\Bundle\DebugBundle">/home/hab/public_html/test/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/config/serializer</argument>
                       <argument key="Symfony\Bundle\WebProfilerBundle">/home/hab/public_html/test/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/config/serializer</argument>
                       <argument key="Sensio\Bundle\DistributionBundle">/home/hab/public_html/test/vendor/sensio/distribution-bundle/Resources/config/serializer</argument>
@@ -3581,6 +3588,7 @@
                       <argument key="TestBundle">/home/hab/public_html/test/src/TestBundle/Resources/config/serializer</argument>
                       <argument key="FondativeTestBundle">/home/hab/public_html/test/src/FondativeTestBundle/Resources/config/serializer</argument>
                       <argument key="ProjectBundle">/home/hab/public_html/test/src/ProjectBundle/Resources/config/serializer</argument>
+                      <argument key="ReportingBundle">/home/hab/public_html/test/src/ReportingBundle/Resources/config/serializer</argument>
                       <argument key="Symfony\Bundle\DebugBundle">/home/hab/public_html/test/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/config/serializer</argument>
                       <argument key="Symfony\Bundle\WebProfilerBundle">/home/hab/public_html/test/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/config/serializer</argument>
                       <argument key="Sensio\Bundle\DistributionBundle">/home/hab/public_html/test/vendor/sensio/distribution-bundle/Resources/config/serializer</argument>
