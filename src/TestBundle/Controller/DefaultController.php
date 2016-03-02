@@ -18,6 +18,7 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
+      var a ;
       //return array('hello' => 'world');
       echo"hamza";
       echo"abbes";
