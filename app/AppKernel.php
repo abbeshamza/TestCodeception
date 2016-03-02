@@ -20,6 +20,8 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new TestBundle\TestBundle(),
             new FondativeTestBundle\FondativeTestBundle(),
+            new ProjectBundle\ProjectBundle(),
+            new ReportingBundle\ReportingBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

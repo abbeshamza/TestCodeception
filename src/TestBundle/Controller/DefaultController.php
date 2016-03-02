@@ -25,9 +25,9 @@ class DefaultController extends Controller
       echo"hamza";
       echo"abbes";
 
-      echo"hamza";
+      echo"hamzaa";
       echo"abbes";
-      
+
       echo"hamza";
       echo"abbes";
 
