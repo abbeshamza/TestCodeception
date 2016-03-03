@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project name="CodeceptionProject" default="build">
+<project name="projet" default="build">
   <property name="workspace" value="${basedir}" />
   <property name="sourcedir" value="${basedir}/src" />
   <property name="builddir" value="${workspace}/app/build" />
-  
 
   <target name="build"
   depends="prepare,vendors,parameters,lint,phploc,pdepend,phpcpd,phpmd-ci,phpcs-ci,phpdoc,phpunit,phpcb"/>
@@ -138,7 +137,7 @@
     </exec>
   </target>
 
-  <target name="vendorsss" description="Update vendors">
+  <target name="vendors" description="Update vendors">
     <exec executable="composer" failonerror="true">
         <arg value="update" />
     </exec>
@@ -146,7 +145,7 @@
 
   <target name="parameters" description="Copy parameters">
     <exec executable="cp" failonerror="true">
-      <arg path="app/config/parameters.yml.dist" />
+      <arg path="app/config/parameters.jenkins.yml" />
       <arg path="app/config/parameters.yml" />
     </exec>
   </target>
