@@ -4,13 +4,7 @@
   <property name="workspace" value="${basedir}" />
   <property name="sourcedir" value="${basedir}/src" />
   <property name="builddir" value="${workspace}/app/build" />
-   <property name="pdepend" value="${basedir}/bin/pdepend"/>
- <property name="phpcpd"  value="${basedir}/bin/phpcpd"/>
- <property name="phpcs"   value="${basedir}/bin/phpcs"/>
- <property name="phpdox"  value="${basedir}/bin/phpdox"/>
- <property name="phploc"  value="${basedir}/bin/phploc"/>
- <property name="phpmd"   value="${basedir}/bin/phpmd"/>
- <property name="phpunit" value="${basedir}/bin/phpunit"/>
+  
 
   <target name="build"
   depends="prepare,vendors,parameters,lint,phploc,pdepend,phpcpd,phpmd-ci,phpcs-ci,phpdoc,phpunit,phpcb"/>
