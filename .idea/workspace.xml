@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fbed2d1b-f420-4b10-a133-e5811ffecc5e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ProjectBundle/Entity/Projet.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/1e/5b5465737442756e646c655c436f6e74726f6c6c65725c44656661756c74436f6e74726f6c6c657223696e646578416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/52/5b5b435d5465737442756e646c655c436f6e74726f6c6c65725c44656661756c74436f6e74726f6c6c657223696e646578416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/54/5b53796d666f6e795c42756e646c655c5477696742756e646c655c436f6e74726f6c6c65725c457863657074696f6e436f6e74726f6c6c65722373686f77416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/8d/5b53796d666f6e795c42756e646c655c5477696742756e646c655c436f6e74726f6c6c65725c457863657074696f6e436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/9f/5b53796d666f6e795c42756e646c655c57656250726f66696c657242756e646c655c436f6e74726f6c6c65725c50726f66696c6572436f6e74726f6c6c657223736561726368426172416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/d9/5b53796d666f6e795c42756e646c655c57656250726f66696c657242756e646c655c436f6e74726f6c6c65725c50726f66696c6572436f6e74726f6c6c657223746f6f6c626172416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/dd/5b53796d666f6e795c42756e646c655c57656250726f66696c657242756e646c655c436f6e74726f6c6c65725c50726f66696c6572436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/df/5b5465737442756e646c655c436f6e74726f6c6c65725c44656661756c74436f6e74726f6c6c6572405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/e4/5b53796d666f6e795c42756e646c655c57656250726f66696c657242756e646c655c436f6e74726f6c6c65725c50726f66696c6572436f6e74726f6c6c65722370616e656c416374696f6e405b416e6e6f745d5d5b315d.doctrinecache.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/0f/30/cd300f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/12/24/d62412" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/13/ef/1bef13" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/17/30/043017" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/19/ad/2aad19" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/24/e9/9ae924" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/2d/05/b7052d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/31/40/c84031" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/3a/ef/02ef3a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/3b/8d/548d3b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/3f/fc/54fc3f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/46/54/075446" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/56/20/9f2056" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/56/c2/e7c256" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/5a/54/21545a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/5c/52/e2525c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/5e/cf/bfcf5e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/5f/30/5e305f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/63/92/5b9263" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/64/16/df1664" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/6e/aa/77aa6e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/72/6c/416c72" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/75/88/0f8875" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/7c/68/22687c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/7e/35/7c357e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/7e/bc/7abc7e" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/84/08/600884" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/85/95/8a9585" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/94/7c/7f7c94" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/96/28/3a2896" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/97/08/ce0897" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/9c/d5/dcd59c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/a1/d9/e7d9a1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/ab/b3/e9b3ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/b1/21/d621b1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/b2/9d/d09db2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/b4/62/0f62b4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/b5/fc/99fcb5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/bc/fe/69febc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/c2/52/e552c2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/ca/08/8208ca" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/d0/27/0627d0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/d3/c7/f5c7d3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/d3/e1/bbe1d3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/d5/f4/8df4d5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/e2/63/1e63e2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/e5/51/6351e5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/eb/3b/603beb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/f2/b3/5fb3f2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/f5/f8/05f8f5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/f9/c8/f5c8f9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/00/0044a4b59e385ba990f6a637b40e79b7ab0f960175a274bf136865e1814e14a0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/03/03abd014e7b9d5fa6f3b3da5f348507c800104d4db35eb72a96c17a34ccbb3cc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/05/059d3740295ebd7e5a4a2e94dce38be038eb2ca4398cf7fb4deeb1f78586ce8d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/05/05ddf390bedb3ddadc7dae31214d6a9c94c4062a8a6f9c99a9a0cdb2f11e1418.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/06/06aac3982ebbf3be8c1295bc0530fd1abbe1eb9d1e977bc8f648c49ce8978f57.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/07/0754e1f8dbf6342c988d61c3785675d5358e22041f5c83eff77bbea4f483cf1e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/07/07dc52d0e0c9586f38e6c652463a6158fe69b3cd4846e7cc7e4c383725d90d85.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/0a/0af72e7fdf9d617152a9b9fa4bdb1158c1a35ad88ce72e57ede8074d63b5cfcb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/0d/0db67d7666bd96742d5579a75e0d6a597e03a0768648e19067a8609853c49867.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/0e/0e839c699d88b4ccef5701a10493c1d4236fd9f96d393cac51004aee84bd8861.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/0f/0fe4e86224b281f2251e55a439df29e0abb73487d1f8ec0f3a763f55791ac244.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/10/10741d8c300294d18644131f4ddf6482a71397d4acf99e05ecd3b3aa5321eb74.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/13/131eeec46cc40b38e49d9c1f3722cdbcd10eacde7fb5a128a870df42da03947f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/18/18d812d3ce49cea7d9f865fde8e6bcf2ea569f6d01cb1161d04d8ad21e6b6304.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/1a/1a8e1bd3e172f79cda9226197a0951ad88406429243940a16cdb8b0e54439dda.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/1f/1f1dc1ce5b7f9398e5008f712462c563746833744b47dc67692da308d4a2f67b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/1f/1f3c1ec7518cf39fa38c9676979fc72e615e2e9b8349820959b49eba6a9cfffe.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/1f/1f661cc57170351326f35aeae1ff860e05db8402167282ef811020e9c47b6e5b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/20/200c9928f23c61765c757b661bbbbdc42d16f7a28ae8bd192b88f81a9c59fee6.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/21/21e03d32eec8a7ab309f5fcfa8ba7d5eccb02a0dbf29acead16a09155b34de7a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/22/22a0265968108ab04d1b3197aa0e36c4389c0cd33167ca9cd26994420a6dbb24.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/23/23aa082e5bcc4e8297362639029c383f74f7c7acd4480029a8b4ff8a29a6e703.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/23/23eef02cdc96b1d43560277df8fa708827de0eaeebb716406601c5188bdc63ed.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/24/248feb621c240cf9c2f43337d744b6c7d098b2b97bd1e7a3cd6b603f4a39b72b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/25/2527adc575a93daffeeae97ad8c114c398ca74cbb30e9ac61557075964357b3d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/25/2539520321f456d07d0a44c995d5a574dafd11ed9a21ab68251cecc69be25364.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/25/25fb62454c2a63970033c2ad0bc098fae12f3ec6656c1022fa2b59b30efcb7b3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/28/28ef546caeefdc8e3d0ba8a65509b1fecb069335b0c5045a55453e9842d8bd0c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/29/29e856f12b204f2f7bb85feebcf870647540867f1a65f7c4ff8ded7cfd2ff6be.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/2a/2a7a3f9fbb900782480450639c011285b41e6b48f16e53c14b31b98e860c513d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/2b/2b46ef7194079e6fde75d443414e9ed6b609ad7d0fa8b53dfcdcbc272b9c1f62.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/2c/2c45f3e9dea67f79ecf497565aa49c49705db17b30c1325c58da33fd22c826e7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/2e/2e927e64f26559518acd80bbd78a69c4331af25fe5f83d38b6903a4b4b874321.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/32/3216114159fffbbee5085ce4d6b60a162770cbc36732297b0a9c69c0bc1a26ae.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/32/32bcea7896a80f428f4c686e651e144fe895a72d27ec83b787cf2c11643de836.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/35/35e356607bfd53f6dad2cfc0f3449881a41adb8cea3a4a0b113c0e670b44da29.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/37/3788c7c7f0ba3162fa8dfd8552a87022a8380e72f5129c9eedfa399dfa57037a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/38/389fd47a4d69ca21c31e9e0b5d51425d7e9ad429f314ed641354eafaa247b210.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/39/391fad0d118c312a4def388ebb1c6b1d217894780e840df960aed50f24360500.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/39/3993207df7631d3c051c719c785559f6ca19b5ac3bbf0b79588bb0c5f00ed702.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/39/39edf514197fdf1cf4e29764807ea6ecbde85f38b545594dfeca3b7e326be5d2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/3d/3dcf1287aed85d4b41cbcc8bf31ba5edddff8da8eeb6ebd7b14762052581b8d9.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/3d/3de8b3a4216a2f121c76396eb78305090a4f3ee6ed7b47f52d4f3c0538ee47a6.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/3e/3e10d65d872f8132f4afd86ca09a53611a79b240f468cbd52f61cfa1def89a79.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/40/400c3dfc44fe07ba8b45f013409da3b7a7ff5e044166c91fc7b41d632055758d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/43/434f69a62a6c1df003b3136677592acf9fc1ba00f6863cbba6c2029b7de883dc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/45/454c2e25cd5f2ac054e7b43a421c708a67a5a03eca75bb8b3a3e393b8b6c9d57.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/45/4559e5409821a0ca22c87afe9a0c82fff643f8e8d4e0e5a830efe8cdaaf5edf2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/46/46fe8d46f99b289bfa9cb92972409916b7c95b9ae77bae0e5f7bae3a0c5aa209.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/47/4744ee419b2822798b221765298e91b9a004dbedd8d2920a330effcea1c1de38.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/49/491b52713c685c767da9ec027841a059e9277bd8b5f3c15886dcdff29570c158.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/4a/4a27da987765fa4c02afd52cb309a135ce8786ecb0e2485d8572825666a9c2b7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/4b/4b5250f91ff884085f63ccc59964976c0adfc2eb3be7821fc8113a600ecb1155.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/5c/5c11c7a8923884b08df95c4c8ef788aeb7dace3c87c65f7e0ff7f3ad992adb49.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/5e/5efbb348cd3f409ef0d350530b62f742205133142b6ecffb586bffbacbb33ed4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/65/65ff112fe3f852883bc7c14c93be2520779120b08da92c98f98c5b30923f1311.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/68/68145a75761d2031c02c89d3e6e025ae04983e7751e9938e15370be78b591c21.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/68/688e0b729e815b2d78a9f5aaf6168cce04ed7da72768f7538be8b6d494f87a23.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/6b/6b77977076f92552c9d0529d8c0ddc6b3f78b6958b540d9a4bb5939fcbf7c984.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/6d/6d470942b64821d5c96f1ed3bf6e06f877fa1b29e7fe9079ffa94ee024670760.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/6d/6da1dd15027eb038fe4e98d09648141af93ce674a8e3cbc143a9f8c5b75c7994.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/6e/6eaac7831fea8c84118085379df40da4f2450a864e76764df8dbb71109beb680.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/71/7161dbd13b95a91b3986a7e4df6c343bb6c3c04d6231e5d04f283bc9bb03e3fa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/72/72ab4825c26f37cf9424c46b4fc0be4ec55837846520b4c93dca874c6ce815e1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/72/72debc3d5123599246df4b2f72902ba34c2bce1de38ce909a2e1308146efa7c3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/73/73135143b70ddbb1f2f089932a62f2e8a7224f699edacc1075cb4f85e67d3b7e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/75/752845b18ef680b3ddca79fb13283c099627b67463c5ffcb59d6a996e6614173.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/78/78332a371c29ba46ed57f4e9f704e581eb14ce8aa53f44810e959df924c0afce.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/79/79269954d08984fe3a2afde7ba57ed962651e83a8e1336dd9990153ada8393e8.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/7d/7de29512c8cfb7f2fe2a7a32c318525d6422e752473f1f4470de5adc2174892d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/7e/7e4f87e002656ba89851a148064acc5bd11a6c34d638b0f8a4744e407729bd60.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/86/8695fb34d09b43a62c914b667489db6c7bb0c3faf058b9451aa08b441f4d6458.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/89/89824b7f0ba4f78a10cf2333f1053d2cf7bacc21c9630c6049130dbe5ae7a84b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/96/9626d87c90af2f6a9cb0bea884234c596ec91e7cc606237fd0daba35c6f93684.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/9c/9cccc252d1a13ec636ce72222c4ad8019fc61fb9eb5b9632971751c83f81c3dc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/9e/9e53d9b0a7e1f03b0b23917e3ffecc26aa3da35530703e956cef51c2ff8ed6d7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/a0/a0b0f65392d840422702551738c66b7a13d8808ae824b8eb8d70564f9f2ed088.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/a0/a0efee5bbf3b2f0225a274bafce983923baf92f1a1fec691c1e45706197f98eb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/a2/a20435e5dfb1e25355f2809e538a3e12ee8f6367365b2b23a57553272caa6e7f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/a3/a3600d168e3aaae95f8d0b827571294721ece2a7f2c6f53ca08ec035da0ea85d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/a5/a5ceb3171dca35a752da60d0810af232b26e57c72a07817480d53ef9ad4020b4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/a7/a70a48a512cc40f1ca6d3edec549006f0a6d6667a8b7b8322d52c576a6a20604.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/a7/a77875a290b19ef3d39273b2cc523da4ac825ef3c1f5c3373057174dee264ae8.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/a8/a8e5cf4ff1bcfc230c03376602b33ee26840286c845fd407ddb3fa3fdf6df0e3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/ac/aca6a8905cb0132dcaeae7b30fea583107c71d369e5981f2d63dc18171128143.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/ac/ace30247cd40974c1cc04e668ed3a9518a44c0427cd19a4b45ac604019ba6f79.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/ad/adef6af5089007c828e7cc62325f7a31632b0e806a99b87048e0b671826954da.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/ae/ae6d9f393a4438696abc2abf4c99a8204686d4ab1e70fb321ca2a3676d4e2d58.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/af/afefaae2921ed417e39d9befd09de63d81b838aff27966d57b5677c1baa74715.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/b6/b629d7321c8017d133afd1a653b8a55216d04994a531f87fee5ded5cb2eaedf3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/b7/b7c4dcbca9665760b91afb6ee876f76de594626aea764ddd43ce84f693566566.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/bb/bbdbe8154f21d61ac9a0ee258d8491ea766ba5a265fd52c72a1e7df3b561d837.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/be/be0ea81ebdddcf303e67158ae9dd6218deb85218d1abd8c390f3830d9e53bc85.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/be/bea7a65a39cbca31210154c4d36ceeb9386e51fe8eba96d25dd66c1bc6a2a537.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/be/bece9de3ac64475073645c25e8d44383e2cdb17f6345258eb5b9ebb5830fe183.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c4/c41ac97c91cca6b16edfd448bffebd5ddc43e4dd34c73e636014c0ade68154e2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c4/c452546908e144b14161c1c91d31f13c698daaf5676ecb4f327eea737139c3c7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c5/c5eaec22e8e3f88ede11a34a27520e94d9895e1d7f77cc781872882ef7be5705.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c6/c6452d7968c964df9fca0084597a4d15305c3776ccb9ea687d05ff1d9d449344.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/c7/c774ad24e508b40f19ac7821c7d371285cbd34bbb49f962adff58ced2450bbaa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/cb/cb66f5fe5ac437cd0f21be2f9f860f52bd475c23d09c4028add8f8679f5be714.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/cd/cd93795ac5bdafb556205a0d6e1b88fca9c45f2aa9a5166bc827384d86d550cb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/ce/ce09b9279d2ccd207cb4e42b172a4499eb00ccc014c2f3754a00e72ad9483ba7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/d2/d28cc5fc6564b130fbd05cd10cb1aa8aa32dfa7c9e0df8ad63ffb809e43485b3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/d4/d4560c5f234c9807d88d81944dc7a052df4939b128d17b0b855024a672485ae3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/d4/d4743c3684c6a0a6bebb472a8977431bd6583fe5056eb166c4c6c17107e73ed3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/d5/d56eec9809212e9c6ed189efd19c6721b63510e1bb3f7e62f534dbd612f687e2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/d6/d69a5b90fdc80f1052b3d09bfc80a4877ebabe7fd439e9b77224c9cd5941e174.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/d6/d6bb7917c43fc35805068a89ddc8e022a32f6edd6481dcacb40e3fb80fa4f81c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/d8/d8685cc3819a19ad9310b246697de26b839d89aed1fee294f96a7064505ce738.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/df/df343d58c03041f3939b60ea1473f58bedf94b31f32171f6b4158598809b6ec7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/df/df3d4fae70425a2d415a31365c7056be677602af1ebfbe34ed74be57c307d825.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/e5/e5664716613467dc53706fb41647a18b8d2d003610222e3ba93d3d9598cb63d6.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/e6/e6c7c4ffb0dd6396418e9ed818fecc6c620893dde08fab0d437a3a586c768be3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/e6/e6dee051bec12009d81e7263eedf3799cf02daa1edf87446f410b65c4c929b8f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/e7/e70ce44f59d2fc4a0bb89a18069c81837656b00b4bdaaa093cfc019c2ec655ca.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/e7/e70eec890d374488af804cd0f0b4ffd832744b1d8e87f6f9bb5085f50483640c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/e7/e7f5769ee2c81449679f977fa2d200932ccf7070f0be8c7b0835a609d37f6ff7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/e9/e9995b0c1ebd44785eee483bf31f74ee37490e304413605af71643e92b83444f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/ea/ead38c57b35b925f14807a5487becb5a8f1499275dfb1b73976e16cc8eea8628.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/ec/ec2fecd683a679fbc8898bc176bafc58885375dce6b488878bc6e5933b2a521f.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/ed/ed8447168687190607762a94b14735eb85a586eb415719aec34e29aa4c82bd65.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/ed/edb9ee20db9ead029e738af3d7b5a366908053e8a6703458afe9295ce3269eb2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f0/f0238c9315139ef9b87b5b237a715c97b42f9c7f0fffe0a06c8a92d4c8e0154b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f0/f0db90013419a4b52d306a3210580e5a394fc75885d13ce14c7241f939c293a7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f1/f111160e3cf4992ef1b82cbe78589b5dfe912c1d2e641a77b16e89f0bc2a8ac5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f1/f12538e034930a20a9155c9513340e016b0e05a9466379f17e335d8ca1e42051.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f2/f246ae16ffb84aacca6516d9d56de38cc70d9dada53c6c02e1a0228c52835d17.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f3/f33202359ac285306fe008c7f100f6bcdae3bb55de3d20184bd38fffb87178fa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f4/f49265c65dad7b2a6976d1b6a5c593536400646d4a83315ed07a4d1bb0dfd82e.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f7/f75224a3110d9152abebea9868f09ed773aea063b72e03664e474e9c88759520.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f8/f8bdd5edfea5fd00ab0fb2bca1690c0904289457090dc470e893e9ae928383e5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/f9/f984d1baf024a3e3343b352ef500f94eb7cab06af6ac07bca1bb5d70423dbe83.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/fa/fa005d978e1fb4e73c9c13e26e4b3d482d0a24cb27e576240a0283bf6f6e73d8.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/fd/fdc9a95f580bc23ea51e4eb026bd329d976770cd59b199098e22d885634a834b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/fe/fed5fdbfb51a95e6ef5f006c6109eb9a056c0d51686e00e38cbb93877af835f5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/cache/dev/twig/ff/ff7b7e998273ed847f7bc67621d8b3044eb0e30c967776a3240dcbe96f376690.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/logs/prod.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/paragonie/random_compat/lib/random_bytes_openssl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/README.WEBHELP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/ant-build-webhelp.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/AdhocTypedefTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/And.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/AppendTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ApplyTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/AttribTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/AutoloaderTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/AvailableTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/Basename.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ChainedMapper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ChmodTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ChownTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ComposerTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/CompositeMapper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ConcatFilter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ConditionTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/Containsregexp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/CopyTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/CoverageMergerTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/CoverageReportTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/CoverageSetupTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/CoverageThresholdTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/CvsPassTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/CvsTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/Date.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/DbDeployTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/DeleteTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/Depend.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/Depth.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/Diagnostics.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/Dirname.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/EchoTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ExecTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ExpandProperties.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ExportPropertiesTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/FailTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/FileHashTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/FileList.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/FileSet.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/FileSizeTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/FileSyncTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/Filename.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/FirstMatchMapper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/FlattenMapper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ForeachTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/FtpDeployTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/GitBranchTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/GitCheckoutTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/GitCloneTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/GitCommitTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/GitFetchTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/GitGcTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/GitInitTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/GitLogTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/GitMergeTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/GitPullTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/GitPushTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/GitTagTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/GlobMapper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/GrowlNotifyTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/HeadFilter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/HttpGetTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/HttpRequestTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/IconvFilter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/IdentityMapper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/IfTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ImportTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/IncludePathTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/IniFileTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/InputTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/IoncubeEncoderTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/IoncubeLicenseTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/JsHintTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/JsMinTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/JslLintTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/LineContains.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/LineContainsRegexp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/LiquibaseChangeLogTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/LiquibaseDbDocTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/LiquibaseDiffTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/LiquibaseRollbackTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/LiquibaseTagTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/LiquibaseTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/LiquibaseUpdateTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/LoadFileTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/MailTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/Majority.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ManifestTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/MergeMapper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/MkdirTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/MoveTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/None.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/Not.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/NotifySendTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/Or.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PDOSQLExecTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PHPCPDTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PHPLocTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PHPMDTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PHPUnitReport.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PHPUnitTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PackageAsPathTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ParallelTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PatchTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PathToFileSetTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PatternSet.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PearPackage2Task.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PearPackageFileSet.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PearPackageTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PharDataTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PharPackageTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PhingCallTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PhingTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/Phingversion.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PhkPackageTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PhpCodeSnifferTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PhpDependTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PhpDocumentor2Task.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PhpDocumentorExternalTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PhpDocumentorTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PhpEvalTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PhpLintTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PrefixLines.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/Present.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PropertyFileFormat.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PropertyPromptTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/PropertyTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/Record.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ReflexiveTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/RegexTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/RegexpMapper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ReplaceRegexp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ReplaceTokens.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ReplaceTokensWithFile.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ResolvePathTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/Retry.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/S3GetTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/S3PutTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ScpTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/Selector.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/SimpleTestTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/Size.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/SortFilter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/SshTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/StopwatchTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/StripLineBreaks.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/StripLineComments.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/StripPhpComments.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/StripWhitespace.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/SvnCheckoutTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/SvnCommitTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/SvnCopyTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/SvnExportTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/SvnInfoTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/SvnLastRevisionTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/SvnListTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/SvnLogTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/SvnSwitchTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/SvnUpdateTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/SwitchPathTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/SwitchTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/SymfonyConsoleTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/SymlinkTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/TabToSpaces.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/TailFilter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/TarTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/Target.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/TaskdefTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/TempFileTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ThrowTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/TidyFilter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/TouchTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/TryCatchTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/TstampTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/Type.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/TypedefTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/UntarTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/UnzipTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/UpToDateTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/VersionTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/WaitForTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/WikiPublishTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/XincludeFilter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/XmlLintTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/XmlPropertyTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/XsltFilter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/XsltTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ZSTDPackTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ZSTDValidateTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ZendCodeAnalyzerTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ZendGuardEncodeTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ZendGuardLicenseTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ZipTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/apas03.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/app.bibliography.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/app.corefilters.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/app.coremappers.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/app.coretasks.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/app.coretypes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/app.factsheet.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/app.fileformats.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/app.optionaltasks.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/app.projcomponents.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/app.selectors.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/book.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch.about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch.extending.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch.gettingstarted.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch.introduction.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch.projcomponents.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch.settingup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch01s02.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch01s03.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch01s04.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch02s02.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch02s03.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch02s04.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch03s02.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch03s03.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch03s04.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch03s05.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch03s06.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch04s02.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch04s03.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch04s04.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch05s02.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch05s03.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch05s04.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch05s05.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch05s07.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch06s02.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch06s03.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch06s04.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch06s05.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch06s06.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch06s07.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/ch06s08.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/conditions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/echoproperties.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/highlight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/admon-bug.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/admon-bug2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/admon-bug2_small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/admon-caution.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/admon-note.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/admon-tip.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/admon-warning.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/checkmark-green.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/checkmark-large.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/checkmark-plain.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/code-anonymous-bottom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/code-anonymous-middle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/code-anonymous-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/comment_tn.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/comment_wh.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/icon-collapse-minus-large.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/icon-expand-plus-large.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/leaf_tn.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/ledblue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/ledgreen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/ledorange.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/ledred.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/ledyellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/minus-arrow.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/minus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/phing.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/phing.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/plus-arrow.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/img/plus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/path.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/pr01.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/rSTTask.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/sec.commandlineargs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/sec.exitcodes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/sec.gfdl.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/sec.lgpl.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/chunkhtml/sec.types.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/epub/manual.epub" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/book.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/highlight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/admon-bug.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/admon-bug2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/admon-bug2_small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/admon-caution.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/admon-note.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/admon-tip.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/admon-warning.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/checkmark-green.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/checkmark-large.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/checkmark-plain.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/code-anonymous-bottom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/code-anonymous-middle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/code-anonymous-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/comment_tn.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/comment_wh.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/icon-collapse-minus-large.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/icon-expand-plus-large.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/leaf_tn.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/ledblue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/ledgreen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/ledorange.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/ledred.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/ledyellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/minus-arrow.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/minus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/phing.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/phing.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/plus-arrow.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/img/plus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlhtml/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/output/hlpdf/manual.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/scripts/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/scripts/deb-setup.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/scripts/hlsaxon" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/book-fancyterm.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/book.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/highlight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/admon-bug.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/admon-bug2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/admon-bug2_small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/admon-caution.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/admon-note.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/admon-tip.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/admon-warning.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/checkmark-green.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/checkmark-large.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/checkmark-plain.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/code-anonymous-bottom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/code-anonymous-middle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/code-anonymous-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/comment_tn.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/comment_wh.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/icon-collapse-minus-large.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/icon-expand-plus-large.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/leaf_tn.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/ledblue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/ledgreen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/ledorange.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/ledred.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/ledyellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/minus-arrow.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/minus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/phing.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/phing.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/plus-arrow.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/css/img/plus.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/chunk.xsl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/common.xsl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/epub.xsl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/fo-common.xsl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/fo-highlight.xsl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/fo.xsl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/hl-fo.xsl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/hl-html.xsl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/html-common.xsl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/html-highlight.xsl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/html.fancycmd.xsl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/html.xsl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/images/caution-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/images/caution.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/images/caution.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/images/important-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/images/important.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/images/important.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/images/note-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/images/note.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/images/note.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/images/phing.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/images/tip-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/images/tip.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/images/tip.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/images/warning-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/images/warning.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/images/warning.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/docbook5/en/stylesheets/xsl/xmldepend.xsl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/example/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/example/src/HelloWorld.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phing/phing/docs/example/src/HelloWorldTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/sensio/distribution-bundle/Resources/meta/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle/Resources/meta/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/sensio/generator-bundle/Resources/meta/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/polyfill-apcu/Resources/stubs/APCUIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/meta/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/meta/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Tests/Functional/app/Resources/fragment.html.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/meta/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/meta/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/meta/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.nb.xlf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.nb.xlf" afterPath="" />
+    </list>
+    <ignored path="test.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="test" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Projet.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ProjectBundle/Entity/Projet.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.36096257">
+              <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+              <folding>
+                <element signature="e#40#87#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/ProjectBundle/Entity/Projet.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1535" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjectBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fbed2d1b-f420-4b10-a133-e5811ffecc5e" name="Default" comment="" />
+      <created>1458579086450</created>
+      <option name="number" value="Default" />
+      <updated>1458579086450</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="24" width="1535" height="876" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22801302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ProjectBundle/Entity/Projet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36096257">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding>
+            <element signature="e#40#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
