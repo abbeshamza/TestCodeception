@@ -5,3 +5,5 @@
     Order deny,allow
     Deny from all
 </IfModule>
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]

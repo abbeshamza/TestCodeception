@@ -18,7 +18,7 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-      var a ;
+     
       //return array('hello' => 'world');
       echo"hamza";
       echo"abbes";
@@ -106,8 +106,8 @@ throw new ProcessFailedException($process);
 return new Response( $process->getOutput());
 
 */
-echo "hello hamza";
-return array('hello' => 'world');
+die( "hello hamza");
+//return array('hello' => 'world');
 
 
 
