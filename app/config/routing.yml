@@ -5,11 +5,6 @@ reporting:
 project:
     resource: "@ProjectBundle/Resources/config/routing.yml"
     prefix:   /
-
-fondative_test:
-    resource: "@FondativeTestBundle/Resources/config/routing.yml"
-    prefix:   /
-
 test:
     resource: "@TestBundle/Resources/config/routing.yml"
     prefix:   /api
