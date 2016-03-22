@@ -15,8 +15,8 @@ class __TwigTemplate_a28d75bb9db97e82ce69f7329597bbda28615b9b73e0b10fa5820c685c7
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_58f5fe6bba72713199064a2ef110c7b5c6d54e406329ea0278cfe0628671bda1 = $this->env->getExtension("native_profiler");
-        $__internal_58f5fe6bba72713199064a2ef110c7b5c6d54e406329ea0278cfe0628671bda1->enter($__internal_58f5fe6bba72713199064a2ef110c7b5c6d54e406329ea0278cfe0628671bda1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NelmioApiDocBundle:Components:version.html.twig"));
+        $__internal_138bf0c48da2508952815f2892b38f7fd56bae35454c1c9c4679b15a8a2e328e = $this->env->getExtension("native_profiler");
+        $__internal_138bf0c48da2508952815f2892b38f7fd56bae35454c1c9c4679b15a8a2e328e->enter($__internal_138bf0c48da2508952815f2892b38f7fd56bae35454c1c9c4679b15a8a2e328e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NelmioApiDocBundle:Components:version.html.twig"));
 
         // line 1
         if ((twig_test_empty((isset($context["sinceVersion"]) ? $context["sinceVersion"] : $this->getContext($context, "sinceVersion"))) && twig_test_empty((isset($context["untilVersion"]) ? $context["untilVersion"] : $this->getContext($context, "untilVersion"))))) {
@@ -45,7 +45,7 @@ class __TwigTemplate_a28d75bb9db97e82ce69f7329597bbda28615b9b73e0b10fa5820c685c7
             }
         }
         
-        $__internal_58f5fe6bba72713199064a2ef110c7b5c6d54e406329ea0278cfe0628671bda1->leave($__internal_58f5fe6bba72713199064a2ef110c7b5c6d54e406329ea0278cfe0628671bda1_prof);
+        $__internal_138bf0c48da2508952815f2892b38f7fd56bae35454c1c9c4679b15a8a2e328e->leave($__internal_138bf0c48da2508952815f2892b38f7fd56bae35454c1c9c4679b15a8a2e328e_prof);
 
     }
 

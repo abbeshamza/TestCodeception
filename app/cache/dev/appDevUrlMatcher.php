@@ -105,45 +105,45 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // reporting_homepage
-        if (rtrim($pathinfo, '/') === '') {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'reporting_homepage');
+        if (0 === strpos($pathinfo, '/rest')) {
+            // reporting_homepage
+            if (rtrim($pathinfo, '/') === '/rest') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'reporting_homepage');
+                }
+
+                return array (  '_controller' => 'ReportingBundle\\Controller\\DefaultController::indexAction',  '_route' => 'reporting_homepage',);
             }
 
-            return array (  '_controller' => 'ReportingBundle\\Controller\\DefaultController::indexAction',  '_route' => 'reporting_homepage',);
-        }
+            // api_get
+            if (rtrim($pathinfo, '/') === '/rest') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_api_get;
+                }
 
-        // project_homepage
-        if (rtrim($pathinfo, '/') === '') {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'project_homepage');
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'api_get');
+                }
+
+                return array (  '_controller' => 'ProjectBundle\\Controller\\ProjetController::getAction',  '_format' => 'json',  '_route' => 'api_get',);
+            }
+            not_api_get:
+
+            // test_homepage
+            if (rtrim($pathinfo, '/') === '/rest') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'test_homepage');
+                }
+
+                return array (  '_controller' => 'TestBundle\\Controller\\DefaultController::indexAction',  '_route' => 'test_homepage',);
             }
 
-            return array (  '_controller' => 'ProjectBundle\\Controller\\DefaultController::indexAction',  '_route' => 'project_homepage',);
-        }
-
-        // fondative_test_homepage
-        if (rtrim($pathinfo, '/') === '') {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'fondative_test_homepage');
+            // testform
+            if ($pathinfo === '/rest/testform') {
+                return array (  '_controller' => 'TestBundle\\Controller\\DefaultController::testAction',  '_route' => 'testform',);
             }
 
-            return array (  '_controller' => 'FondativeTestBundle\\Controller\\DefaultController::indexAction',  '_route' => 'fondative_test_homepage',);
-        }
-
-        // test_homepage
-        if (rtrim($pathinfo, '/') === '') {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'test_homepage');
-            }
-
-            return array (  '_controller' => 'TestBundle\\Controller\\DefaultController::indexAction',  '_route' => 'test_homepage',);
-        }
-
-        // testform
-        if ($pathinfo === '/testform') {
-            return array (  '_controller' => 'TestBundle\\Controller\\DefaultController::testAction',  '_route' => 'testform',);
         }
 
         // homepage
@@ -155,9 +155,23 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
         }
 
-        // api_login_check
-        if ($pathinfo === '/api/login_check') {
-            return array('_route' => 'api_login_check');
+        if (0 === strpos($pathinfo, '/api')) {
+            // api_login_check
+            if ($pathinfo === '/api/login_check') {
+                return array('_route' => 'api_login_check');
+            }
+
+            // nelmio_api_doc_index
+            if (0 === strpos($pathinfo, '/api/doc') && preg_match('#^/api/doc(?:/(?P<view>[^/]++))?$#s', $pathinfo, $matches)) {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_nelmio_api_doc_index;
+                }
+
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'nelmio_api_doc_index')), array (  '_controller' => 'Nelmio\\ApiDocBundle\\Controller\\ApiDocController::indexAction',  'view' => 'default',));
+            }
+            not_nelmio_api_doc_index:
+
         }
 
         if (0 === strpos($pathinfo, '/log')) {

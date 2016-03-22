@@ -21,7 +21,6 @@
       <parameter key="NelmioApiDocBundle">Nelmio\ApiDocBundle\NelmioApiDocBundle</parameter>
       <parameter key="AppBundle">AppBundle\AppBundle</parameter>
       <parameter key="TestBundle">TestBundle\TestBundle</parameter>
-      <parameter key="FondativeTestBundle">FondativeTestBundle\FondativeTestBundle</parameter>
       <parameter key="ProjectBundle">ProjectBundle\ProjectBundle</parameter>
       <parameter key="ReportingBundle">ReportingBundle\ReportingBundle</parameter>
       <parameter key="UserBundle">UserBundle\UserBundle</parameter>
@@ -47,6 +46,7 @@
     <parameter key="jwt_public_key_path">/home/hab/public_html/test/app/var/jwt/public.pem</parameter>
     <parameter key="jwt_key_pass_phrase">test</parameter>
     <parameter key="jwt_token_ttl">86400</parameter>
+    <parameter key="project.project_manager.class">ProjectBundle\Manager\ProjetManager</parameter>
     <parameter key="locale">en</parameter>
     <parameter key="dossier_tests">tests</parameter>
     <parameter key="dossier_out">tests/hamza_test</parameter>
@@ -673,13 +673,18 @@
       <parameter key="json">application/json</parameter>
       <parameter key="xml">application/xml</parameter>
     </parameter>
-    <parameter key="nelmio_api_doc.sandbox.entity_to_choice">true</parameter>
+    <parameter key="nelmio_api_doc.sandbox.entity_to_choice">false</parameter>
     <parameter key="nelmio_api_doc.formatter.abstract_formatter.class">Nelmio\ApiDocBundle\Formatter\AbstractFormatter</parameter>
     <parameter key="nelmio_api_doc.formatter.markdown_formatter.class">Nelmio\ApiDocBundle\Formatter\MarkdownFormatter</parameter>
     <parameter key="nelmio_api_doc.formatter.simple_formatter.class">Nelmio\ApiDocBundle\Formatter\SimpleFormatter</parameter>
     <parameter key="nelmio_api_doc.formatter.html_formatter.class">Nelmio\ApiDocBundle\Formatter\HtmlFormatter</parameter>
     <parameter key="nelmio_api_doc.formatter.swagger_formatter.class">Nelmio\ApiDocBundle\Formatter\SwaggerFormatter</parameter>
-    <parameter key="nelmio_api_doc.sandbox.authentication">null</parameter>
+    <parameter key="nelmio_api_doc.sandbox.authentication" type="collection">
+      <parameter key="name">Authorization</parameter>
+      <parameter key="delivery">header</parameter>
+      <parameter key="type">bearer</parameter>
+      <parameter key="custom_endpoint">false</parameter>
+    </parameter>
     <parameter key="nelmio_api_doc.extractor.api_doc_extractor.class">Nelmio\ApiDocBundle\Extractor\ApiDocExtractor</parameter>
     <parameter key="nelmio_api_doc.form.extension.description_form_type_extension.class">Nelmio\ApiDocBundle\Form\Extension\DescriptionFormTypeExtension</parameter>
     <parameter key="nelmio_api_doc.twig.extension.extra_markdown.class">Nelmio\ApiDocBundle\Twig\Extension\MarkdownExtension</parameter>
@@ -799,6 +804,10 @@
   </parameters>
   <services>
     <service id="test.test" class="TestBundle\Service\TestService"/>
+    <service id="test_project.projet_manager" class="ProjectBundle\Manager\ProjetManager">
+      <argument type="service" id="doctrine.orm.default_entity_manager"/>
+      <argument type="service" id="service_container"/>
+    </service>
     <service id="controller_name_converter" class="Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser" public="false">
       <tag name="monolog.logger" channel="request"/>
       <argument type="service" id="kernel"/>
@@ -2049,7 +2058,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>56f021c0bbb514.10558044</argument>
+            <argument>56f175589ae256.22300674</argument>
           </service>
         </argument>
         <argument type="service">
@@ -2073,7 +2082,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>56f021c0bbb514.10558044</argument>
+            <argument>56f175589ae256.22300674</argument>
           </service>
         </argument>
       </argument>
@@ -2201,17 +2210,6 @@
         </argument>
         <argument>null</argument>
       </call>
-      <call method="add">
-        <argument type="service">
-          <service class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-            <argument>^/api</argument>
-          </service>
-        </argument>
-        <argument type="collection">
-          <argument>IS_AUTHENTICATED_FULLY</argument>
-        </argument>
-        <argument>null</argument>
-      </call>
     </service>
     <service id="security.access_listener" class="Symfony\Component\Security\Http\Firewall\AccessListener" public="false">
       <tag name="monolog.logger" channel="security"/>
@@ -2288,7 +2286,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>56f021c0bbb514.10558044</argument>
+            <argument>56f175589ae256.22300674</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2470,7 +2468,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>56f021c0bbb514.10558044</argument>
+            <argument>56f175589ae256.22300674</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -3633,7 +3631,12 @@
         <argument>form</argument>
       </call>
       <call method="setAuthentication">
-        <argument>null</argument>
+        <argument type="collection">
+          <argument key="name">Authorization</argument>
+          <argument key="delivery">header</argument>
+          <argument key="type">bearer</argument>
+          <argument key="custom_endpoint">false</argument>
+        </argument>
       </call>
       <call method="setDefaultSectionsOpened">
         <argument>true</argument>
@@ -3658,6 +3661,14 @@
           <argument key="contact">null</argument>
           <argument key="license">null</argument>
           <argument key="licenseUrl">null</argument>
+        </argument>
+      </call>
+      <call method="setAuthenticationConfig">
+        <argument type="collection">
+          <argument key="name">Authorization</argument>
+          <argument key="delivery">header</argument>
+          <argument key="type">bearer</argument>
+          <argument key="custom_endpoint">false</argument>
         </argument>
       </call>
     </service>
@@ -3984,7 +3995,7 @@
     <service id="nelmio_api_doc.parser.form_type_parser" class="Nelmio\ApiDocBundle\Parser\FormTypeParser">
       <tag name="nelmio_api_doc.extractor.parser"/>
       <argument type="service" id="form.factory"/>
-      <argument>true</argument>
+      <argument>false</argument>
     </service>
     <service id="nelmio_api_doc.parser.validation_parser" class="Nelmio\ApiDocBundle\Parser\ValidationParser">
       <tag name="nelmio_api_doc.extractor.parser"/>
@@ -4094,10 +4105,6 @@
       <call method="addPath">
         <argument>/home/hab/public_html/test/src/TestBundle/Resources/views</argument>
         <argument>Test</argument>
-      </call>
-      <call method="addPath">
-        <argument>/home/hab/public_html/test/src/FondativeTestBundle/Resources/views</argument>
-        <argument>FondativeTest</argument>
       </call>
       <call method="addPath">
         <argument>/home/hab/public_html/test/src/ProjectBundle/Resources/views</argument>
@@ -4295,7 +4302,6 @@
                       <argument key="Nelmio\ApiDocBundle">/home/hab/public_html/test/vendor/nelmio/api-doc-bundle/Nelmio/ApiDocBundle/Resources/config/serializer</argument>
                       <argument key="AppBundle">/home/hab/public_html/test/src/AppBundle/Resources/config/serializer</argument>
                       <argument key="TestBundle">/home/hab/public_html/test/src/TestBundle/Resources/config/serializer</argument>
-                      <argument key="FondativeTestBundle">/home/hab/public_html/test/src/FondativeTestBundle/Resources/config/serializer</argument>
                       <argument key="ProjectBundle">/home/hab/public_html/test/src/ProjectBundle/Resources/config/serializer</argument>
                       <argument key="ReportingBundle">/home/hab/public_html/test/src/ReportingBundle/Resources/config/serializer</argument>
                       <argument key="UserBundle">/home/hab/public_html/test/src/UserBundle/Resources/config/serializer</argument>
@@ -4327,7 +4333,6 @@
                       <argument key="Nelmio\ApiDocBundle">/home/hab/public_html/test/vendor/nelmio/api-doc-bundle/Nelmio/ApiDocBundle/Resources/config/serializer</argument>
                       <argument key="AppBundle">/home/hab/public_html/test/src/AppBundle/Resources/config/serializer</argument>
                       <argument key="TestBundle">/home/hab/public_html/test/src/TestBundle/Resources/config/serializer</argument>
-                      <argument key="FondativeTestBundle">/home/hab/public_html/test/src/FondativeTestBundle/Resources/config/serializer</argument>
                       <argument key="ProjectBundle">/home/hab/public_html/test/src/ProjectBundle/Resources/config/serializer</argument>
                       <argument key="ReportingBundle">/home/hab/public_html/test/src/ReportingBundle/Resources/config/serializer</argument>
                       <argument key="UserBundle">/home/hab/public_html/test/src/UserBundle/Resources/config/serializer</argument>
@@ -4359,7 +4364,6 @@
                       <argument key="Nelmio\ApiDocBundle">/home/hab/public_html/test/vendor/nelmio/api-doc-bundle/Nelmio/ApiDocBundle/Resources/config/serializer</argument>
                       <argument key="AppBundle">/home/hab/public_html/test/src/AppBundle/Resources/config/serializer</argument>
                       <argument key="TestBundle">/home/hab/public_html/test/src/TestBundle/Resources/config/serializer</argument>
-                      <argument key="FondativeTestBundle">/home/hab/public_html/test/src/FondativeTestBundle/Resources/config/serializer</argument>
                       <argument key="ProjectBundle">/home/hab/public_html/test/src/ProjectBundle/Resources/config/serializer</argument>
                       <argument key="ReportingBundle">/home/hab/public_html/test/src/ReportingBundle/Resources/config/serializer</argument>
                       <argument key="UserBundle">/home/hab/public_html/test/src/UserBundle/Resources/config/serializer</argument>

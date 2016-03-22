@@ -1,3 +1,4 @@
-project_homepage:
-    path:     /
-    defaults: { _controller: ProjectBundle:Default:index }
+projet_rest:
+    resource: ProjectBundle\Controller\ProjetController
+    type:     rest
+    name_prefix:  api_projet

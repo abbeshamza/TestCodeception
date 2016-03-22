@@ -1,25 +1,31 @@
 reporting:
     resource: "@ReportingBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /rest
 
 project:
+    type : rest
     resource: "@ProjectBundle/Resources/config/routing.yml"
-    prefix:   /
-
-fondative_test:
-    resource: "@FondativeTestBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /rest
 
 test:
     resource: "@TestBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /rest
 
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
 api_login_check:
     path: /api/login_check
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc
+
+
+
+
 # app/config/routing.yml
+
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
 

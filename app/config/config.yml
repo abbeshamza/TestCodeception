@@ -3,7 +3,6 @@ imports:
     - { resource: security.yml }
     - { resource: services.yml }
     - { resource: "@TestBundle/Resources/config/services.yml" }
-    - { resource: "@FondativeTestBundle/Resources/config/services.yml" }
     - { resource: "@ProjectBundle/Resources/config/services.yml" }
     - { resource: "@ReportingBundle/Resources/config/services.yml" }
 
@@ -94,3 +93,11 @@ lexik_jwt_authentication:
     public_key_path:  %jwt_public_key_path%
     pass_phrase:      %jwt_key_pass_phrase%
     token_ttl:        %jwt_token_ttl%
+nelmio_api_doc:
+    sandbox:
+        authentication:
+            name: Authorization
+            delivery: header          # `query`, `http`, and `header` are supported
+            type:     bearer         # `basic`, `bearer` are supported
+        entity_to_choice: false     # default is `true`, if `false`, entity collection
+                                    # will not be mapped as choice
