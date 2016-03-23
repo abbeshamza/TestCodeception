@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f2ffffb59daef6d61af97bca96109343",
-    "content-hash": "3e8b107526570c7679f5d47c89723298",
+    "hash": "30e98fb6434209303a57b2b100be52b8",
+    "content-hash": "99ebc7129db3f2bcb99ba8afd9d52f72",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1691,17 +1691,17 @@
         },
         {
             "name": "nelmio/api-doc-bundle",
-            "version": "2.11.2",
+            "version": "2.12.0",
             "target-dir": "Nelmio/ApiDocBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "1ae2cfa9a50279d722d6b6e7b02322cef948d55d"
+                "reference": "6793b701570f5f426678309910b2440c8f5d1d9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/1ae2cfa9a50279d722d6b6e7b02322cef948d55d",
-                "reference": "1ae2cfa9a50279d722d6b6e7b02322cef948d55d",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/6793b701570f5f426678309910b2440c8f5d1d9e",
+                "reference": "6793b701570f5f426678309910b2440c8f5d1d9e",
                 "shasum": ""
             },
             "require": {
@@ -1714,6 +1714,7 @@
             "conflict": {
                 "jms/serializer": "<0.12",
                 "jms/serializer-bundle": "<0.11",
+                "symfony/symfony": "~2.7.8",
                 "twig/twig": "<1.12"
             },
             "require-dev": {
@@ -1742,7 +1743,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.11-dev"
+                    "dev-master": "2.12-dev"
                 }
             },
             "autoload": {
@@ -1771,20 +1772,77 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2015-12-16 15:17:51"
+            "time": "2016-03-21 11:19:12"
         },
         {
-            "name": "paragonie/random_compat",
-            "version": "v1.3.0",
+            "name": "nelmio/cors-bundle",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "ff76e1a660669bb56ba74ba0583fd8d41417bf39"
+                "url": "https://github.com/nelmio/NelmioCorsBundle.git",
+                "reference": "fa14a81737c605bf4766054cdcb72a16a433d537"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/ff76e1a660669bb56ba74ba0583fd8d41417bf39",
-                "reference": "ff76e1a660669bb56ba74ba0583fd8d41417bf39",
+                "url": "https://api.github.com/repos/nelmio/NelmioCorsBundle/zipball/fa14a81737c605bf4766054cdcb72a16a433d537",
+                "reference": "fa14a81737c605bf4766054cdcb72a16a433d537",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/framework-bundle": "^2.2 || ^3.0"
+            },
+            "require-dev": {
+                "matthiasnoback/symfony-dependency-injection-test": "^0.7.6",
+                "mockery/mockery": "0.9.*"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nelmio\\CorsBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nelmio",
+                    "homepage": "http://nelm.io"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://github.com/nelmio/NelmioCorsBundle/contributors"
+                }
+            ],
+            "description": "Adds CORS (Cross-Origin Resource Sharing) headers support in your Symfony2 application",
+            "keywords": [
+                "api",
+                "cors",
+                "crossdomain"
+            ],
+            "time": "2015-12-09 17:26:34"
+        },
+        {
+            "name": "paragonie/random_compat",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/random_compat.git",
+                "reference": "c7e26a21ba357863de030f0b9e701c7d04593774"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/c7e26a21ba357863de030f0b9e701c7d04593774",
+                "reference": "c7e26a21ba357863de030f0b9e701c7d04593774",
                 "shasum": ""
             },
             "require": {
@@ -1819,7 +1877,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2016-03-17 16:11:57"
+            "time": "2016-03-18 20:34:03"
         },
         {
             "name": "pdepend/pdepend",
@@ -3336,16 +3394,16 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v3.0.14",
+            "version": "v3.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "cccf975c565ccd835bddc30a8fea5cdfe3357bf1"
+                "reference": "40431d338da7ab4ef5f9edc1ba4551ea1d4d0782"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/cccf975c565ccd835bddc30a8fea5cdfe3357bf1",
-                "reference": "cccf975c565ccd835bddc30a8fea5cdfe3357bf1",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/40431d338da7ab4ef5f9edc1ba4551ea1d4d0782",
+                "reference": "40431d338da7ab4ef5f9edc1ba4551ea1d4d0782",
                 "shasum": ""
             },
             "require": {
@@ -3394,7 +3452,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2016-03-01 10:50:07"
+            "time": "2016-03-22 12:39:08"
         },
         {
             "name": "sensiolabs/security-checker",
@@ -4767,16 +4825,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.1.1",
+            "version": "6.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "c6851d6e48f63b69357cbfa55bca116448140e0c"
+                "reference": "d094e337976dff9d8e2424e8485872194e768662"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/c6851d6e48f63b69357cbfa55bca116448140e0c",
-                "reference": "c6851d6e48f63b69357cbfa55bca116448140e0c",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/d094e337976dff9d8e2424e8485872194e768662",
+                "reference": "d094e337976dff9d8e2424e8485872194e768662",
                 "shasum": ""
             },
             "require": {
@@ -4792,7 +4850,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.1-dev"
+                    "dev-master": "6.2-dev"
                 }
             },
             "autoload": {
@@ -4825,7 +4883,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2015-11-23 00:47:50"
+            "time": "2016-03-21 20:02:09"
         },
         {
             "name": "guzzlehttp/promises",

@@ -1,6 +1,6 @@
 <?php
 
-/* @WebProfiler/Profiler/toolbar_item.html.twig */
+/* WebProfilerBundle:Profiler:toolbar_item.html.twig */
 class __TwigTemplate_612d253558ebed7e9cd160702ec7df637153ba276cde6c164593440e90f0a88f extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,8 +15,8 @@ class __TwigTemplate_612d253558ebed7e9cd160702ec7df637153ba276cde6c164593440e90f
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_11fe30c26d589ffb04a8df0506bb7693ac362682a889997bb32d2c9ad6ec782f = $this->env->getExtension("native_profiler");
-        $__internal_11fe30c26d589ffb04a8df0506bb7693ac362682a889997bb32d2c9ad6ec782f->enter($__internal_11fe30c26d589ffb04a8df0506bb7693ac362682a889997bb32d2c9ad6ec782f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/toolbar_item.html.twig"));
+        $__internal_f597f5107be34f8dbe425b7091799c780ba0b91cfe291a4a1d433f8b5e1ebf1d = $this->env->getExtension("native_profiler");
+        $__internal_f597f5107be34f8dbe425b7091799c780ba0b91cfe291a4a1d433f8b5e1ebf1d->enter($__internal_f597f5107be34f8dbe425b7091799c780ba0b91cfe291a4a1d433f8b5e1ebf1d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "WebProfilerBundle:Profiler:toolbar_item.html.twig"));
 
         // line 1
         echo "<div class=\"sf-toolbar-block sf-toolbar-block-";
@@ -49,13 +49,13 @@ class __TwigTemplate_612d253558ebed7e9cd160702ec7df637153ba276cde6c164593440e90f
 </div>
 ";
         
-        $__internal_11fe30c26d589ffb04a8df0506bb7693ac362682a889997bb32d2c9ad6ec782f->leave($__internal_11fe30c26d589ffb04a8df0506bb7693ac362682a889997bb32d2c9ad6ec782f_prof);
+        $__internal_f597f5107be34f8dbe425b7091799c780ba0b91cfe291a4a1d433f8b5e1ebf1d->leave($__internal_f597f5107be34f8dbe425b7091799c780ba0b91cfe291a4a1d433f8b5e1ebf1d_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "@WebProfiler/Profiler/toolbar_item.html.twig";
+        return "WebProfilerBundle:Profiler:toolbar_item.html.twig";
     }
 
     public function isTraitable()

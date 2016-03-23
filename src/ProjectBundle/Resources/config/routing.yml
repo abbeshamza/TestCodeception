@@ -1,4 +1,4 @@
 projet_rest:
     resource: ProjectBundle\Controller\ProjetController
     type:     rest
-    name_prefix:  api_projet
+    name_prefix:  rest

@@ -26,9 +26,23 @@ security:
                 require_previous_session: false
 
         api:
-            pattern:   ^/api
+            pattern:   ^/rest
             stateless: true
-            lexik_jwt: ~
+            lexik_jwt:
+                authorization_header: # check token in Authorization Header
+                    enabled: true
+                    prefix:  Bearer
+                    name:    Authorization
+                cookie:               # check token in a cookie
+                    enabled: false
+                    name:    BEARER
+                query_parameter:      # check token in query string parameter
+                    enabled: false
+                    name:    bearer
+                throw_exceptions:        false     # When an authentication failure occurs, return a 401 response immediately
+                create_entry_point:      true      # When no authentication details are provided, create a default entry point that returns a 401 response
+                authentication_provider: lexik_jwt_authentication.security.authentication.provider
+                authentication_listener: lexik_jwt_authentication.security.authentication.listener
 
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
@@ -43,4 +57,4 @@ security:
             anonymous:         true
     access_control:
         - { path: ^/api/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-       # - { path: ^/api,       roles: IS_AUTHENTICATED_FULLY }
+        - { path: ^/rest,       roles: IS_AUTHENTICATED_FULLY }

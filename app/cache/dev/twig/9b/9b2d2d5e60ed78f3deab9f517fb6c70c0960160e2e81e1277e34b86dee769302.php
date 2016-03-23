@@ -16,8 +16,8 @@ class __TwigTemplate_ae480373855534b0e29f967cb97469add2aa951bbb9635886824425cc42
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_755f7b0ef136283324e93530f3355641faa554e19cf08e352a1d6115362611c1 = $this->env->getExtension("native_profiler");
-        $__internal_755f7b0ef136283324e93530f3355641faa554e19cf08e352a1d6115362611c1->enter($__internal_755f7b0ef136283324e93530f3355641faa554e19cf08e352a1d6115362611c1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NelmioApiDocBundle::layout.html.twig"));
+        $__internal_3ddd94dcfa9caa6e4efc230bb8342222d24f57f25806f1678106417a06324260 = $this->env->getExtension("native_profiler");
+        $__internal_3ddd94dcfa9caa6e4efc230bb8342222d24f57f25806f1678106417a06324260->enter($__internal_3ddd94dcfa9caa6e4efc230bb8342222d24f57f25806f1678106417a06324260_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NelmioApiDocBundle::layout.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">
@@ -321,6 +321,9 @@ class __TwigTemplate_ae480373855534b0e29f967cb97469add2aa951bbb9635886824425cc42
                         case \"file\":
                             \$('<input type=\"file\" class=\"value\" placeholder=\"'+ placeholder +'\">').insertAfter(\$context);
                             break;
+                        case \"textarea\":
+                            \$('<textarea class=\"value\" placeholder=\"'+ placeholder +'\" />').insertAfter(\$context);
+                            break;
                         default:
                             \$('<input type=\"text\" class=\"value\" placeholder=\"'+ placeholder +'\">').insertAfter(\$context);
                     }
@@ -510,7 +513,7 @@ class __TwigTemplate_ae480373855534b0e29f967cb97469add2aa951bbb9635886824425cc42
 
                     // set requestFormat
                     var requestFormatMethod = '";
-            // line 399
+            // line 402
             echo twig_escape_filter($this->env, (isset($context["requestFormatMethod"]) ? $context["requestFormatMethod"] : $this->getContext($context, "requestFormatMethod")), "html", null, true);
             echo "';
                     if (requestFormatMethod == 'format_param') {
@@ -522,7 +525,7 @@ class __TwigTemplate_ae480373855534b0e29f967cb97469add2aa951bbb9635886824425cc42
 
                     // set default bodyFormat
                     var bodyFormat = \$('#body_format').val() || '";
-            // line 408
+            // line 411
             echo twig_escape_filter($this->env, (isset($context["defaultBodyFormat"]) ? $context["defaultBodyFormat"] : $this->getContext($context, "defaultBodyFormat")), "html", null, true);
             echo "';
 
@@ -628,29 +631,29 @@ class __TwigTemplate_ae480373855534b0e29f967cb97469add2aa951bbb9635886824425cc42
 
                     // prepare the api enpoint
                     ";
-            // line 511
+            // line 514
             if (((((isset($context["endpoint"]) ? $context["endpoint"] : $this->getContext($context, "endpoint")) == "") &&  !(null === $this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()))) && $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()), "host", array()))) {
-                // line 512
+                // line 515
                 echo "var endpoint = '";
                 echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "request", array()), "getBaseUrl", array(), "method"), "html", null, true);
                 echo "';
                     ";
             } else {
-                // line 514
+                // line 517
                 echo "var endpoint = '";
                 echo twig_escape_filter($this->env, (isset($context["endpoint"]) ? $context["endpoint"] : $this->getContext($context, "endpoint")), "html", null, true);
                 echo "';
                     ";
             }
-            // line 516
+            // line 519
             if (((isset($context["authentication"]) ? $context["authentication"] : $this->getContext($context, "authentication")) && $this->getAttribute((isset($context["authentication"]) ? $context["authentication"] : $this->getContext($context, "authentication")), "custom_endpoint", array()))) {
-                // line 517
+                // line 520
                 echo "                    if (\$('#api_endpoint') && typeof(\$('#api_endpoint').val()) != 'undefined') {
                         endpoint = \$('#api_endpoint').val();
                     }
                     ";
             }
-            // line 521
+            // line 524
             echo "
                     // prepare final parameters
                     var body = {};
@@ -663,6 +666,7 @@ class __TwigTemplate_ae480373855534b0e29f967cb97469add2aa951bbb9635886824425cc42
                     var data = content.length ? content : body;
                     var ajaxOptions = {
                         url: (url.indexOf('http')!=0?endpoint:'') + url,
+                        xhrFields: { withCredentials: true },
                         type: method,
                         data: data,
                         headers: headers,
@@ -826,29 +830,29 @@ class __TwigTemplate_ae480373855534b0e29f967cb97469add2aa951bbb9635886824425cc42
                 });
 
                 ";
-            // line 695
+            // line 699
             if (((isset($context["authentication"]) ? $context["authentication"] : $this->getContext($context, "authentication")) && ($this->getAttribute((isset($context["authentication"]) ? $context["authentication"] : $this->getContext($context, "authentication")), "delivery", array()) == "http"))) {
-                // line 696
-                echo "                var authentication_delivery = '";
-                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["authentication"]) ? $context["authentication"] : $this->getContext($context, "authentication")), "delivery", array()), "html", null, true);
-                echo "';
-                var api_key_parameter = '";
-                // line 697
-                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["authentication"]) ? $context["authentication"] : $this->getContext($context, "authentication")), "name", array()), "html", null, true);
-                echo "';
-                var authentication_type = '";
-                // line 698
-                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["authentication"]) ? $context["authentication"] : $this->getContext($context, "authentication")), "type", array()), "html", null, true);
-                echo "';
-                ";
-            } elseif ((            // line 699
-(isset($context["authentication"]) ? $context["authentication"] : $this->getContext($context, "authentication")) && ($this->getAttribute((isset($context["authentication"]) ? $context["authentication"] : $this->getContext($context, "authentication")), "delivery", array()) == "query"))) {
                 // line 700
                 echo "                var authentication_delivery = '";
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["authentication"]) ? $context["authentication"] : $this->getContext($context, "authentication")), "delivery", array()), "html", null, true);
                 echo "';
                 var api_key_parameter = '";
                 // line 701
+                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["authentication"]) ? $context["authentication"] : $this->getContext($context, "authentication")), "name", array()), "html", null, true);
+                echo "';
+                var authentication_type = '";
+                // line 702
+                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["authentication"]) ? $context["authentication"] : $this->getContext($context, "authentication")), "type", array()), "html", null, true);
+                echo "';
+                ";
+            } elseif ((            // line 703
+(isset($context["authentication"]) ? $context["authentication"] : $this->getContext($context, "authentication")) && ($this->getAttribute((isset($context["authentication"]) ? $context["authentication"] : $this->getContext($context, "authentication")), "delivery", array()) == "query"))) {
+                // line 704
+                echo "                var authentication_delivery = '";
+                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["authentication"]) ? $context["authentication"] : $this->getContext($context, "authentication")), "delivery", array()), "html", null, true);
+                echo "';
+                var api_key_parameter = '";
+                // line 705
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["authentication"]) ? $context["authentication"] : $this->getContext($context, "authentication")), "name", array()), "html", null, true);
                 echo "';
                 var search = window.location.search;
@@ -864,43 +868,43 @@ class __TwigTemplate_ae480373855534b0e29f967cb97469add2aa951bbb9635886824425cc42
                     \$('#api_key').val(api_key);
                 }
                 ";
-            } elseif ((            // line 714
+            } elseif ((            // line 718
 (isset($context["authentication"]) ? $context["authentication"] : $this->getContext($context, "authentication")) && ($this->getAttribute((isset($context["authentication"]) ? $context["authentication"] : $this->getContext($context, "authentication")), "delivery", array()) == "header"))) {
-                // line 715
+                // line 719
                 echo "                var authentication_delivery = '";
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["authentication"]) ? $context["authentication"] : $this->getContext($context, "authentication")), "delivery", array()), "html", null, true);
                 echo "';
                 var api_key_parameter = '";
-                // line 716
+                // line 720
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["authentication"]) ? $context["authentication"] : $this->getContext($context, "authentication")), "name", array()), "html", null, true);
                 echo "';
                 ";
             } else {
-                // line 718
+                // line 722
                 echo "                var authentication_delivery = false;
                 ";
             }
-            // line 720
+            // line 724
             echo "            ";
         }
-        // line 721
+        // line 725
         echo "        </script>
     </body>
 </html>
 ";
         
-        $__internal_755f7b0ef136283324e93530f3355641faa554e19cf08e352a1d6115362611c1->leave($__internal_755f7b0ef136283324e93530f3355641faa554e19cf08e352a1d6115362611c1_prof);
+        $__internal_3ddd94dcfa9caa6e4efc230bb8342222d24f57f25806f1678106417a06324260->leave($__internal_3ddd94dcfa9caa6e4efc230bb8342222d24f57f25806f1678106417a06324260_prof);
 
     }
 
     // line 56
     public function block_content($context, array $blocks = array())
     {
-        $__internal_a487a5d744dba4781163578df19c7953e20b7da46931ffb3be0408d6a1f1a6ad = $this->env->getExtension("native_profiler");
-        $__internal_a487a5d744dba4781163578df19c7953e20b7da46931ffb3be0408d6a1f1a6ad->enter($__internal_a487a5d744dba4781163578df19c7953e20b7da46931ffb3be0408d6a1f1a6ad_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+        $__internal_e522648f44d786a006ee1991e1b5e122d9c78e2444a8234e4ee9540cfc6c4113 = $this->env->getExtension("native_profiler");
+        $__internal_e522648f44d786a006ee1991e1b5e122d9c78e2444a8234e4ee9540cfc6c4113->enter($__internal_e522648f44d786a006ee1991e1b5e122d9c78e2444a8234e4ee9540cfc6c4113_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
         
-        $__internal_a487a5d744dba4781163578df19c7953e20b7da46931ffb3be0408d6a1f1a6ad->leave($__internal_a487a5d744dba4781163578df19c7953e20b7da46931ffb3be0408d6a1f1a6ad_prof);
+        $__internal_e522648f44d786a006ee1991e1b5e122d9c78e2444a8234e4ee9540cfc6c4113->leave($__internal_e522648f44d786a006ee1991e1b5e122d9c78e2444a8234e4ee9540cfc6c4113_prof);
 
     }
 
@@ -916,7 +920,7 @@ class __TwigTemplate_ae480373855534b0e29f967cb97469add2aa951bbb9635886824425cc42
 
     public function getDebugInfo()
     {
-        return array (  897 => 56,  887 => 721,  884 => 720,  880 => 718,  875 => 716,  870 => 715,  868 => 714,  852 => 701,  847 => 700,  845 => 699,  841 => 698,  837 => 697,  832 => 696,  830 => 695,  654 => 521,  648 => 517,  646 => 516,  640 => 514,  634 => 512,  632 => 511,  526 => 408,  514 => 399,  264 => 151,  262 => 150,  215 => 105,  211 => 103,  209 => 102,  164 => 60,  159 => 57,  157 => 56,  153 => 54,  151 => 53,  147 => 51,  143 => 49,  138 => 46,  134 => 44,  132 => 43,  129 => 42,  125 => 40,  123 => 39,  119 => 37,  116 => 36,  114 => 35,  111 => 34,  108 => 33,  95 => 31,  91 => 30,  87 => 28,  84 => 27,  80 => 25,  73 => 24,  67 => 23,  63 => 21,  61 => 20,  58 => 19,  56 => 18,  50 => 17,  42 => 12,  36 => 9,  31 => 7,  23 => 1,);
+        return array (  901 => 56,  891 => 725,  888 => 724,  884 => 722,  879 => 720,  874 => 719,  872 => 718,  856 => 705,  851 => 704,  849 => 703,  845 => 702,  841 => 701,  836 => 700,  834 => 699,  657 => 524,  651 => 520,  649 => 519,  643 => 517,  637 => 515,  635 => 514,  529 => 411,  517 => 402,  264 => 151,  262 => 150,  215 => 105,  211 => 103,  209 => 102,  164 => 60,  159 => 57,  157 => 56,  153 => 54,  151 => 53,  147 => 51,  143 => 49,  138 => 46,  134 => 44,  132 => 43,  129 => 42,  125 => 40,  123 => 39,  119 => 37,  116 => 36,  114 => 35,  111 => 34,  108 => 33,  95 => 31,  91 => 30,  87 => 28,  84 => 27,  80 => 25,  73 => 24,  67 => 23,  63 => 21,  61 => 20,  58 => 19,  56 => 18,  50 => 17,  42 => 12,  36 => 9,  31 => 7,  23 => 1,);
     }
 }
 /* <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">*/
@@ -1128,6 +1132,9 @@ class __TwigTemplate_ae480373855534b0e29f967cb97469add2aa951bbb9635886824425cc42
 /*                             break;*/
 /*                         case "file":*/
 /*                             $('<input type="file" class="value" placeholder="'+ placeholder +'">').insertAfter($context);*/
+/*                             break;*/
+/*                         case "textarea":*/
+/*                             $('<textarea class="value" placeholder="'+ placeholder +'" />').insertAfter($context);*/
 /*                             break;*/
 /*                         default:*/
 /*                             $('<input type="text" class="value" placeholder="'+ placeholder +'">').insertAfter($context);*/
@@ -1451,6 +1458,7 @@ class __TwigTemplate_ae480373855534b0e29f967cb97469add2aa951bbb9635886824425cc42
 /*                     var data = content.length ? content : body;*/
 /*                     var ajaxOptions = {*/
 /*                         url: (url.indexOf('http')!=0?endpoint:'') + url,*/
+/*                         xhrFields: { withCredentials: true },*/
 /*                         type: method,*/
 /*                         data: data,*/
 /*                         headers: headers,*/

@@ -1,2 +1,5 @@
 reports/*
 app/cache/*
+.idea/workspace.xml
+vendor/*
+web/bundles/*

@@ -115,20 +115,16 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return array (  '_controller' => 'ReportingBundle\\Controller\\DefaultController::indexAction',  '_route' => 'reporting_homepage',);
             }
 
-            // api_get
-            if (rtrim($pathinfo, '/') === '/rest') {
-                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                    $allow = array_merge($allow, array('GET', 'HEAD'));
-                    goto not_api_get;
+            // restpost_projet
+            if ($pathinfo === '/rest/projets') {
+                if ($this->context->getMethod() != 'POST') {
+                    $allow[] = 'POST';
+                    goto not_restpost_projet;
                 }
 
-                if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'api_get');
-                }
-
-                return array (  '_controller' => 'ProjectBundle\\Controller\\ProjetController::getAction',  '_format' => 'json',  '_route' => 'api_get',);
+                return array (  '_controller' => 'ProjectBundle\\Controller\\ProjetController::postAction',  '_format' => 'json',  '_route' => 'restpost_projet',);
             }
-            not_api_get:
+            not_restpost_projet:
 
             // test_homepage
             if (rtrim($pathinfo, '/') === '/rest') {
@@ -155,24 +151,21 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
         }
 
-        if (0 === strpos($pathinfo, '/api')) {
-            // api_login_check
-            if ($pathinfo === '/api/login_check') {
-                return array('_route' => 'api_login_check');
-            }
-
-            // nelmio_api_doc_index
-            if (0 === strpos($pathinfo, '/api/doc') && preg_match('#^/api/doc(?:/(?P<view>[^/]++))?$#s', $pathinfo, $matches)) {
-                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                    $allow = array_merge($allow, array('GET', 'HEAD'));
-                    goto not_nelmio_api_doc_index;
-                }
-
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'nelmio_api_doc_index')), array (  '_controller' => 'Nelmio\\ApiDocBundle\\Controller\\ApiDocController::indexAction',  'view' => 'default',));
-            }
-            not_nelmio_api_doc_index:
-
+        // api_login_check
+        if ($pathinfo === '/api/login_check') {
+            return array('_route' => 'api_login_check');
         }
+
+        // nelmio_api_doc_index
+        if (0 === strpos($pathinfo, '/doc') && preg_match('#^/doc(?:/(?P<view>[^/]++))?$#s', $pathinfo, $matches)) {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_nelmio_api_doc_index;
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'nelmio_api_doc_index')), array (  '_controller' => 'Nelmio\\ApiDocBundle\\Controller\\ApiDocController::indexAction',  'view' => 'default',));
+        }
+        not_nelmio_api_doc_index:
 
         if (0 === strpos($pathinfo, '/log')) {
             if (0 === strpos($pathinfo, '/login')) {

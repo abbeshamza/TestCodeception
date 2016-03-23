@@ -114,7 +114,6 @@
   'NelmioApiDocBundle::resources.html.twig' => '/home/hab/public_html/test/vendor/nelmio/api-doc-bundle/Nelmio/ApiDocBundle/Resources/views/resources.html.twig',
   'TestBundle:Default:test.html.twig' => '/home/hab/public_html/test/src/TestBundle/Resources/views/Default/test.html.twig',
   'TestBundle:Default:index.html.twig' => '/home/hab/public_html/test/src/TestBundle/Resources/views/Default/index.html.twig',
-  'ProjectBundle:Default:index.html.twig' => '/home/hab/public_html/test/src/ProjectBundle/Resources/views/Default/index.html.twig',
   'ReportingBundle:Default:index.html.twig' => '/home/hab/public_html/test/src/ReportingBundle/Resources/views/Default/index.html.twig',
   'UserBundle:Default:index.html.twig' => '/home/hab/public_html/test/src/UserBundle/Resources/views/Default/index.html.twig',
   'DebugBundle:Profiler:dump.html.twig' => '/home/hab/public_html/test/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views/Profiler/dump.html.twig',

@@ -22,11 +22,41 @@ use FOS\RestBundle\Controller\Annotations\RouteResource;
  * @since Class available since Release 1.0.0
  *
  */
+/**
+ * @RouteResource("projet")
+ */
 class ProjetController extends Controller
 {
+    /**
+     * Get contract
+     *
+     * @ApiDoc(
+     *     section="20. Contract Services",
+     *     description="Get contract",
+     *     requirements={
+     *      {"name"="id", "requirement"="\d+", "dataType"="integer", "required"=true, "description"="contract id"},
+     *    },
+     *     statusCodes={
+     *        200={
+     *            "200"="The request has succeeded"
+     *            },
+     *        400={
+     *             "40074"="Contract not found",
+     *            },
+     *        403={
+     *             "40311"="Denied access to contract"
+     *            },
+     *        500={
+     *            "5001"="An internal error has occurred"
+     *            }
+     *
+     *     }
+     * )
+     */
 
-    public function getAction(Request $req)
+    public function postAction(Request $req)
     {
-        var_dump($req);
+       // $data = $req->parameters("username");
+        die($req->get('username'));
     }
 }
