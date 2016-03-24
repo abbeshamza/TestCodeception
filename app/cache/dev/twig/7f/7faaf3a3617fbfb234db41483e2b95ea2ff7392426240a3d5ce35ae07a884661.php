@@ -15,8 +15,8 @@ class __TwigTemplate_01e98971212243e9ab4c405c6533b33538c1c51210c3e033e5296715a41
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_fd1335640a8ac0dce2e15fd651c065f3649a62abe5c5d6220a6b67ff5d243c97 = $this->env->getExtension("native_profiler");
-        $__internal_fd1335640a8ac0dce2e15fd651c065f3649a62abe5c5d6220a6b67ff5d243c97->enter($__internal_fd1335640a8ac0dce2e15fd651c065f3649a62abe5c5d6220a6b67ff5d243c97_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NelmioApiDocBundle::method.html.twig"));
+        $__internal_aaa8ab2ca689ee80df623902a760bdf2104db2e5b9d95881a1d08a2b4c548e82 = $this->env->getExtension("native_profiler");
+        $__internal_aaa8ab2ca689ee80df623902a760bdf2104db2e5b9d95881a1d08a2b4c548e82->enter($__internal_aaa8ab2ca689ee80df623902a760bdf2104db2e5b9d95881a1d08a2b4c548e82_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NelmioApiDocBundle::method.html.twig"));
 
         // line 1
         echo "<li class=\"";
@@ -821,7 +821,7 @@ class __TwigTemplate_01e98971212243e9ab4c405c6533b33538c1c51210c3e033e5296715a41
 </li>
 ";
         
-        $__internal_fd1335640a8ac0dce2e15fd651c065f3649a62abe5c5d6220a6b67ff5d243c97->leave($__internal_fd1335640a8ac0dce2e15fd651c065f3649a62abe5c5d6220a6b67ff5d243c97_prof);
+        $__internal_aaa8ab2ca689ee80df623902a760bdf2104db2e5b9d95881a1d08a2b4c548e82->leave($__internal_aaa8ab2ca689ee80df623902a760bdf2104db2e5b9d95881a1d08a2b4c548e82_prof);
 
     }
 

@@ -6,7 +6,7 @@
  * @package ApiResponse
  * @author Fondative <devteam@fondative.com>
  */
-namespace AppBundle\Core\ApiResponse;
+namespace AppBundle\Core;
 
 use JMS\Serializer\Naming\IdenticalPropertyNamingStrategy;
 use JMS\Serializer\Naming\SerializedNameAnnotationStrategy;

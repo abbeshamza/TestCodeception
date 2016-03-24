@@ -7,10 +7,14 @@
  */
 
 namespace ProjectBundle\Controller;
+use ProjectBundle\Entity\Projet;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Form\Form;
 use Symfony\Component\HttpFoundation\Request;
+use ProjectBundle\Form\ProjetType;
 use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 use FOS\RestBundle\Controller\Annotations\RouteResource;
+use AppBundle\Core\ApiResponse;
 
 /**
  * Class ApiLegalController for legal pages
@@ -28,23 +32,25 @@ use FOS\RestBundle\Controller\Annotations\RouteResource;
 class ProjetController extends Controller
 {
     /**
-     * Get contract
+     * Post Project
      *
      * @ApiDoc(
-     *     section="20. Contract Services",
-     *     description="Get contract",
-     *     requirements={
-     *      {"name"="id", "requirement"="\d+", "dataType"="integer", "required"=true, "description"="contract id"},
-     *    },
+     *     section="2. Projet Services",
+     *     description="Post Project",
+     *      parameters={
+     *      {"name"="name", "dataType"="string", "required"=true, "description"="Name of project"},
+     *      {"name"="status", "dataType"="string", "required"=true, "description"="Status of project : open / closed"},
+     *       },
+     *
      *     statusCodes={
      *        200={
      *            "200"="The request has succeeded"
      *            },
      *        400={
-     *             "40074"="Contract not found",
+     *             "40074"="Project not found",
      *            },
      *        403={
-     *             "40311"="Denied access to contract"
+     *             "40311"="Denied access to Project"
      *            },
      *        500={
      *            "5001"="An internal error has occurred"
@@ -56,7 +62,18 @@ class ProjetController extends Controller
 
     public function postAction(Request $req)
     {
-       // $data = $req->parameters("username");
-        die($req->get('username'));
+       $entity = new Projet();
+        $form = $this->createForm(new ProjetType(), $entity);
+        $form->handleRequest($req);
+
+     if ($form->isValid())
+     {
+         die( "yes");
+
+     }
+
+       else
+          die (json_encode($form));// return new ApiResponse($form,400);
+
     }
 }

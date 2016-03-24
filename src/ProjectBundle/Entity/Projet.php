@@ -7,7 +7,11 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 use JMS\Serializer\Annotation\Exclude;
 use JMS\Serializer\Annotation\PreSerialize;
+use JMS\Serializer\Annotation as Serialiser ;
+use JMS\Serializer\Annotation\ExclusionPolicy;
+use JMS\Serializer\Annotation\Expose;
 /**
+ * @ExclusionPolicy("all")
  *
  * @ORM\Entity(repositoryClass="ProjectBundle\Repository\ProjetRepository")
  * @ORM\Table("projets")
@@ -17,6 +21,7 @@ class Projet extends Bundle
 {
 
     /**
+     * @Expose
      * @var integer
      *
      * @ORM\Column(name="id", type="integer")
@@ -25,6 +30,7 @@ class Projet extends Bundle
      */
     protected $id;
     /**
+     * @Expose
      * @Assert\NotBlank(message="Nom projet requis")
      * @ORM\Column(name="nom", type="string", length=255, nullable=true)
      */
@@ -34,18 +40,9 @@ class Projet extends Bundle
      */
     private $nomDossier;
 
-    /**
-     * @ORM\Column(name="date_creation", type="datetime")
-     * @var DateTime
-     */
-    private $dateCreation;
 
     /**
-     * @ORM\Column(name="date_livraison", type="datetime")
-     * @var DateTime
-     */
-    private $dateLivraison;
-    /**
+     * @Expose
      *
      * @ORM\Column(name="statut", type="string", length=255, nullable=true)
      */
@@ -109,53 +106,6 @@ class Projet extends Bundle
         return $this->nomDossier;
     }
 
-    /**
-     * Set dateCreation
-     *
-     * @param \DateTime $dateCreation
-     *
-     * @return Projet
-     */
-    public function setDateCreation($dateCreation)
-    {
-        $this->dateCreation = $dateCreation;
-
-        return $this;
-    }
-
-    /**
-     * Get dateCreation
-     *
-     * @return \DateTime
-     */
-    public function getDateCreation()
-    {
-        return $this->dateCreation;
-    }
-
-    /**
-     * Set dateLivraison
-     *
-     * @param \DateTime $dateLivraison
-     *
-     * @return Projet
-     */
-    public function setDateLivraison($dateLivraison)
-    {
-        $this->dateLivraison = $dateLivraison;
-
-        return $this;
-    }
-
-    /**
-     * Get dateLivraison
-     *
-     * @return \DateTime
-     */
-    public function getDateLivraison()
-    {
-        return $this->dateLivraison;
-    }
 
     /**
      * Set statut

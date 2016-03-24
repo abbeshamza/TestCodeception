@@ -16,8 +16,6 @@ class ProjetType extends AbstractType
     {
         $builder
             ->add('nom')
-            ->add('dateCreation', 'datetime')
-            ->add('dateLivraison', 'datetime')
             ->add('statut')
         ;
     }
@@ -30,5 +28,9 @@ class ProjetType extends AbstractType
         $resolver->setDefaults(array(
             'data_class' => 'ProjectBundle\Entity\Projet'
         ));
+    }
+    public function getName()
+    {
+        return 'projet';
     }
 }

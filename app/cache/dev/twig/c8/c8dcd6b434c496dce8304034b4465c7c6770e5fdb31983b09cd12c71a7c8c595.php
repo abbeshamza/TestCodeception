@@ -1,6 +1,6 @@
 <?php
 
-/* NelmioApiDocBundle:Components:motd.html.twig */
+/* NelmioApiDocBundle::Components/motd.html.twig */
 class __TwigTemplate_c8ede0773f8813fed4e3c0de79a96512f94f9e23b6a7fdad8d33793816941ade extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,20 +15,20 @@ class __TwigTemplate_c8ede0773f8813fed4e3c0de79a96512f94f9e23b6a7fdad8d337938169
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_7d1532f0b905c905b26650c833d05dbedb20d86dd3b679c5477d2e8df3711e45 = $this->env->getExtension("native_profiler");
-        $__internal_7d1532f0b905c905b26650c833d05dbedb20d86dd3b679c5477d2e8df3711e45->enter($__internal_7d1532f0b905c905b26650c833d05dbedb20d86dd3b679c5477d2e8df3711e45_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NelmioApiDocBundle:Components:motd.html.twig"));
+        $__internal_a6d27e41fa03226bb11591d903539fd76def9c02f3df8b2f66af0c9e6e659dcc = $this->env->getExtension("native_profiler");
+        $__internal_a6d27e41fa03226bb11591d903539fd76def9c02f3df8b2f66af0c9e6e659dcc->enter($__internal_a6d27e41fa03226bb11591d903539fd76def9c02f3df8b2f66af0c9e6e659dcc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "NelmioApiDocBundle::Components/motd.html.twig"));
 
         // line 1
         echo "<div class=\"motd\"></div>
 ";
         
-        $__internal_7d1532f0b905c905b26650c833d05dbedb20d86dd3b679c5477d2e8df3711e45->leave($__internal_7d1532f0b905c905b26650c833d05dbedb20d86dd3b679c5477d2e8df3711e45_prof);
+        $__internal_a6d27e41fa03226bb11591d903539fd76def9c02f3df8b2f66af0c9e6e659dcc->leave($__internal_a6d27e41fa03226bb11591d903539fd76def9c02f3df8b2f66af0c9e6e659dcc_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "NelmioApiDocBundle:Components:motd.html.twig";
+        return "NelmioApiDocBundle::Components/motd.html.twig";
     }
 
     public function getDebugInfo()
