@@ -102,3 +102,11 @@ nelmio_api_doc:
             type:     bearer         # `basic`, `bearer` are supported
         entity_to_choice: false     # default is `true`, if `false`, entity collection
                                     # will not be mapped as choice
+nelmio_cors:
+    paths:
+        '^/rest/':
+            allow_credentials: true
+            allow_origin: ['*']
+            allow_headers: ['*']
+            allow_methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE']
+            max_age: 3600

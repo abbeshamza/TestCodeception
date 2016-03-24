@@ -25,6 +25,7 @@
       <parameter key="ReportingBundle">ReportingBundle\ReportingBundle</parameter>
       <parameter key="UserBundle">UserBundle\UserBundle</parameter>
       <parameter key="LexikJWTAuthenticationBundle">Lexik\Bundle\JWTAuthenticationBundle\LexikJWTAuthenticationBundle</parameter>
+      <parameter key="NelmioCorsBundle">Nelmio\CorsBundle\NelmioCorsBundle</parameter>
       <parameter key="DebugBundle">Symfony\Bundle\DebugBundle\DebugBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
@@ -725,6 +726,34 @@
     <parameter key="lexik_jwt_authentication.pass_phrase">test</parameter>
     <parameter key="lexik_jwt_authentication.token_ttl">86400</parameter>
     <parameter key="lexik_jwt_authentication.user_identity_field">username</parameter>
+    <parameter key="nelmio_cors.defaults" type="collection">
+      <parameter key="allow_origin" type="collection"/>
+      <parameter key="allow_credentials">false</parameter>
+      <parameter key="allow_headers" type="collection"/>
+      <parameter key="expose_headers" type="collection"/>
+      <parameter key="allow_methods" type="collection"/>
+      <parameter key="max_age">0</parameter>
+      <parameter key="hosts" type="collection"/>
+      <parameter key="origin_regex">false</parameter>
+    </parameter>
+    <parameter key="nelmio_cors.map" type="collection">
+      <parameter key="^/rest/" type="collection">
+        <parameter key="allow_credentials">true</parameter>
+        <parameter key="allow_origin">true</parameter>
+        <parameter key="allow_headers">true</parameter>
+        <parameter key="allow_methods" type="collection">
+          <parameter>GET</parameter>
+          <parameter>POST</parameter>
+          <parameter>PUT</parameter>
+          <parameter>PATCH</parameter>
+          <parameter>DELETE</parameter>
+        </parameter>
+        <parameter key="max_age">3600</parameter>
+      </parameter>
+    </parameter>
+    <parameter key="nelmio_cors.cors_listener.class">Nelmio\CorsBundle\EventListener\CorsListener</parameter>
+    <parameter key="nelmio_cors.options_resolver.class">Nelmio\CorsBundle\Options\Resolver</parameter>
+    <parameter key="nelmio_cors.options_provider.config.class">Nelmio\CorsBundle\Options\ConfigProvider</parameter>
     <parameter key="web_profiler.controller.profiler.class">Symfony\Bundle\WebProfilerBundle\Controller\ProfilerController</parameter>
     <parameter key="web_profiler.controller.router.class">Symfony\Bundle\WebProfilerBundle\Controller\RouterController</parameter>
     <parameter key="web_profiler.controller.exception.class">Symfony\Bundle\WebProfilerBundle\Controller\ExceptionController</parameter>
@@ -1929,6 +1958,14 @@
         </argument>
         <argument>0</argument>
       </call>
+      <call method="addListenerService">
+        <argument>kernel.request</argument>
+        <argument type="collection">
+          <argument>nelmio_cors.cors_listener</argument>
+          <argument>onKernelRequest</argument>
+        </argument>
+        <argument>10000</argument>
+      </call>
       <call method="addSubscriberService">
         <argument>response_listener</argument>
         <argument>Symfony\Component\HttpKernel\EventListener\ResponseListener</argument>
@@ -2058,7 +2095,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>56f2c8df4d3257.46946829</argument>
+            <argument>56f3b7b2101dd3.05439897</argument>
           </service>
         </argument>
         <argument type="service">
@@ -2082,7 +2119,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>56f2c8df4d3257.46946829</argument>
+            <argument>56f3b7b2101dd3.05439897</argument>
           </service>
         </argument>
       </argument>
@@ -2297,7 +2334,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>56f2c8df4d3257.46946829</argument>
+            <argument>56f3b7b2101dd3.05439897</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2479,7 +2516,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>56f2c8df4d3257.46946829</argument>
+            <argument>56f3b7b2101dd3.05439897</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -3783,6 +3820,45 @@
       <tag name="monolog.logger" channel="security"/>
       <argument type="service" id="debug.event_dispatcher"/>
     </service>
+    <service id="nelmio_cors.cors_listener" class="Nelmio\CorsBundle\EventListener\CorsListener">
+      <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest" priority="10000"/>
+      <argument type="service" id="debug.event_dispatcher"/>
+      <argument type="service">
+        <service class="Nelmio\CorsBundle\Options\Resolver" public="false">
+          <argument type="collection">
+            <argument type="service" id="nelmio_cors.options_provider.config"/>
+          </argument>
+        </service>
+      </argument>
+    </service>
+    <service id="nelmio_cors.options_provider.config" class="Nelmio\CorsBundle\Options\ConfigProvider">
+      <tag name="nelmio_cors.options_provider" priority="-1"/>
+      <argument type="collection">
+        <argument key="^/rest/" type="collection">
+          <argument key="allow_credentials">true</argument>
+          <argument key="allow_origin">true</argument>
+          <argument key="allow_headers">true</argument>
+          <argument key="allow_methods" type="collection">
+            <argument>GET</argument>
+            <argument>POST</argument>
+            <argument>PUT</argument>
+            <argument>PATCH</argument>
+            <argument>DELETE</argument>
+          </argument>
+          <argument key="max_age">3600</argument>
+        </argument>
+      </argument>
+      <argument type="collection">
+        <argument key="allow_origin" type="collection"/>
+        <argument key="allow_credentials">false</argument>
+        <argument key="allow_headers" type="collection"/>
+        <argument key="expose_headers" type="collection"/>
+        <argument key="allow_methods" type="collection"/>
+        <argument key="max_age">0</argument>
+        <argument key="hosts" type="collection"/>
+        <argument key="origin_regex">false</argument>
+      </argument>
+    </service>
     <service id="data_collector.dump" class="Symfony\Component\HttpKernel\DataCollector\DumpDataCollector">
       <tag name="data_collector" id="dump" template="@Debug/Profiler/dump.html.twig" priority="240"/>
       <argument type="service" id="debug.stopwatch" on-invalid="ignore"/>
@@ -4118,10 +4194,6 @@
         <argument>Test</argument>
       </call>
       <call method="addPath">
-        <argument>/home/hab/public_html/test/src/ProjectBundle/Resources/views</argument>
-        <argument>Project</argument>
-      </call>
-      <call method="addPath">
         <argument>/home/hab/public_html/test/src/ReportingBundle/Resources/views</argument>
         <argument>Reporting</argument>
       </call>
@@ -4317,6 +4389,7 @@
                       <argument key="ReportingBundle">/home/hab/public_html/test/src/ReportingBundle/Resources/config/serializer</argument>
                       <argument key="UserBundle">/home/hab/public_html/test/src/UserBundle/Resources/config/serializer</argument>
                       <argument key="Lexik\Bundle\JWTAuthenticationBundle">/home/hab/public_html/test/vendor/lexik/jwt-authentication-bundle/Lexik/Bundle/JWTAuthenticationBundle/Resources/config/serializer</argument>
+                      <argument key="Nelmio\CorsBundle">/home/hab/public_html/test/vendor/nelmio/cors-bundle/Resources/config/serializer</argument>
                       <argument key="Symfony\Bundle\DebugBundle">/home/hab/public_html/test/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/config/serializer</argument>
                       <argument key="Symfony\Bundle\WebProfilerBundle">/home/hab/public_html/test/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/config/serializer</argument>
                       <argument key="Sensio\Bundle\DistributionBundle">/home/hab/public_html/test/vendor/sensio/distribution-bundle/Resources/config/serializer</argument>
@@ -4348,6 +4421,7 @@
                       <argument key="ReportingBundle">/home/hab/public_html/test/src/ReportingBundle/Resources/config/serializer</argument>
                       <argument key="UserBundle">/home/hab/public_html/test/src/UserBundle/Resources/config/serializer</argument>
                       <argument key="Lexik\Bundle\JWTAuthenticationBundle">/home/hab/public_html/test/vendor/lexik/jwt-authentication-bundle/Lexik/Bundle/JWTAuthenticationBundle/Resources/config/serializer</argument>
+                      <argument key="Nelmio\CorsBundle">/home/hab/public_html/test/vendor/nelmio/cors-bundle/Resources/config/serializer</argument>
                       <argument key="Symfony\Bundle\DebugBundle">/home/hab/public_html/test/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/config/serializer</argument>
                       <argument key="Symfony\Bundle\WebProfilerBundle">/home/hab/public_html/test/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/config/serializer</argument>
                       <argument key="Sensio\Bundle\DistributionBundle">/home/hab/public_html/test/vendor/sensio/distribution-bundle/Resources/config/serializer</argument>
@@ -4379,6 +4453,7 @@
                       <argument key="ReportingBundle">/home/hab/public_html/test/src/ReportingBundle/Resources/config/serializer</argument>
                       <argument key="UserBundle">/home/hab/public_html/test/src/UserBundle/Resources/config/serializer</argument>
                       <argument key="Lexik\Bundle\JWTAuthenticationBundle">/home/hab/public_html/test/vendor/lexik/jwt-authentication-bundle/Lexik/Bundle/JWTAuthenticationBundle/Resources/config/serializer</argument>
+                      <argument key="Nelmio\CorsBundle">/home/hab/public_html/test/vendor/nelmio/cors-bundle/Resources/config/serializer</argument>
                       <argument key="Symfony\Bundle\DebugBundle">/home/hab/public_html/test/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/config/serializer</argument>
                       <argument key="Symfony\Bundle\WebProfilerBundle">/home/hab/public_html/test/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/config/serializer</argument>
                       <argument key="Sensio\Bundle\DistributionBundle">/home/hab/public_html/test/vendor/sensio/distribution-bundle/Resources/config/serializer</argument>

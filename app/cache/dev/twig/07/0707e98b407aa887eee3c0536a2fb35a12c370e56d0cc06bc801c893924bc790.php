@@ -1,6 +1,6 @@
 <?php
 
-/* WebProfilerBundle:Profiler:toolbar.html.twig */
+/* @WebProfiler/Profiler/toolbar.html.twig */
 class __TwigTemplate_47bc9c0381c10379868e09d490004f7e74b260d19f8e845851fc8a7c6784f0a3 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,8 +15,8 @@ class __TwigTemplate_47bc9c0381c10379868e09d490004f7e74b260d19f8e845851fc8a7c678
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d7ca0c4f3fa27e03fe2ea87edca4edf46555b09b7292c922e54c3b5e6a72b5d1 = $this->env->getExtension("native_profiler");
-        $__internal_d7ca0c4f3fa27e03fe2ea87edca4edf46555b09b7292c922e54c3b5e6a72b5d1->enter($__internal_d7ca0c4f3fa27e03fe2ea87edca4edf46555b09b7292c922e54c3b5e6a72b5d1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "WebProfilerBundle:Profiler:toolbar.html.twig"));
+        $__internal_33fe3015734d03fb21478f4c920364f42358885edc852c413a793a552daf6775 = $this->env->getExtension("native_profiler");
+        $__internal_33fe3015734d03fb21478f4c920364f42358885edc852c413a793a552daf6775->enter($__internal_33fe3015734d03fb21478f4c920364f42358885edc852c413a793a552daf6775_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/toolbar.html.twig"));
 
         // line 1
         echo "<!-- START of Symfony Web Debug Toolbar -->
@@ -125,13 +125,13 @@ $context["name"], "profiler_markup_version" =>             // line 34
 <!-- END of Symfony Web Debug Toolbar -->
 ";
         
-        $__internal_d7ca0c4f3fa27e03fe2ea87edca4edf46555b09b7292c922e54c3b5e6a72b5d1->leave($__internal_d7ca0c4f3fa27e03fe2ea87edca4edf46555b09b7292c922e54c3b5e6a72b5d1_prof);
+        $__internal_33fe3015734d03fb21478f4c920364f42358885edc852c413a793a552daf6775->leave($__internal_33fe3015734d03fb21478f4c920364f42358885edc852c413a793a552daf6775_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "WebProfilerBundle:Profiler:toolbar.html.twig";
+        return "@WebProfiler/Profiler/toolbar.html.twig";
     }
 
     public function isTraitable()

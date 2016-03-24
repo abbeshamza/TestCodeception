@@ -28,6 +28,7 @@ class AppKernel extends Kernel
             new ReportingBundle\ReportingBundle(),
             new UserBundle\UserBundle(),
             new Lexik\Bundle\JWTAuthenticationBundle\LexikJWTAuthenticationBundle(),
+            new Nelmio\CorsBundle\NelmioCorsBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
