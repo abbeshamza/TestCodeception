@@ -1,5 +1,5 @@
 parameters:
-    project.project_manager.class: ProjectBundle\Manager\ProjetManager
+    project.project_manager.class: ProjectBundle\Manager\ProjectManager
 
 services:
     test_project.projet_manager:

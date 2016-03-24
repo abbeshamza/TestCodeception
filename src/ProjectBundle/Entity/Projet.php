@@ -32,21 +32,22 @@ class Projet extends Bundle
     /**
      * @Expose
      * @Assert\NotBlank(message="Nom projet requis")
-     * @ORM\Column(name="nom", type="string", length=255, nullable=true)
+     * @ORM\Column(name="nom_projet", type="string", length=255, nullable=true)
      */
-    private $nom;
+    private $nameProject;
     /**
+     *
      * @ORM\Column(name="nom_dossier", type="string", length=255, nullable=true)
      */
-    private $nomDossier;
+    private $folderName;
 
 
     /**
      * @Expose
-     *
+     * @Assert\NotBlank(message="Nom projet requis")
      * @ORM\Column(name="statut", type="string", length=255, nullable=true)
      */
-    private $statut;
+    private $status;
 
     /**
      * Get id
@@ -65,33 +66,32 @@ class Projet extends Bundle
      *
      * @return Projet
      */
-    public function setNom($nom)
+    public function setNameProject($nom)
     {
-        $this->nom = $nom;
+        $this->nameProject = $nom;
 
         return $this;
     }
 
     /**
-     * Get nom
+     * Get name
      *
      * @return string
      */
-    public function getNom()
+    public function getNameProject()
     {
-        return $this->nom;
+        return $this->nameProject;
     }
 
     /**
      * Set nomDossier
      *
-     * @param string $nomDossier
      *
      * @return Projet
      */
-    public function setNomDossier($nomDossier)
+    public function setFolderName()
     {
-        $this->nomDossier = $nomDossier;
+        $this->folderName = $this->getNameProject();
 
         return $this;
     }
@@ -101,9 +101,9 @@ class Projet extends Bundle
      *
      * @return string
      */
-    public function getNomDossier()
+    public function getFolderName()
     {
-        return $this->nomDossier;
+        return $this->folderName;
     }
 
 
@@ -114,9 +114,9 @@ class Projet extends Bundle
      *
      * @return Projet
      */
-    public function setStatut($statut)
+    public function setStatus($statut)
     {
-        $this->statut = $statut;
+        $this->status = $statut;
 
         return $this;
     }
@@ -126,8 +126,8 @@ class Projet extends Bundle
      *
      * @return string
      */
-    public function getStatut()
+    public function getStatus()
     {
-        return $this->statut;
+        return $this->status;
     }
 }

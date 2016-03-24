@@ -62,18 +62,14 @@ class ProjetController extends Controller
 
     public function postAction(Request $req)
     {
-       $entity = new Projet();
-        $form = $this->createForm(new ProjetType(), $entity);
-        $form->handleRequest($req);
+        $projectManager = $this->get('test_project.projet_manager');
+        $project = $projectManager->createProjectFromRequest($req);
+        if ( !$projectManager->projectValidation($project) )
+            return new ApiResponse( $project, 201);
+        else
+            return new ApiResponse( $project, 401);
 
-     if ($form->isValid())
-     {
-         die( "yes");
-
-     }
-
-       else
-          die (json_encode($form));// return new ApiResponse($form,400);
 
     }
+
 }

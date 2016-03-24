@@ -47,7 +47,7 @@
     <parameter key="jwt_public_key_path">/home/hab/public_html/test/app/var/jwt/public.pem</parameter>
     <parameter key="jwt_key_pass_phrase">test</parameter>
     <parameter key="jwt_token_ttl">86400</parameter>
-    <parameter key="project.project_manager.class">ProjectBundle\Manager\ProjetManager</parameter>
+    <parameter key="project.project_manager.class">ProjectBundle\Manager\ProjectManager</parameter>
     <parameter key="locale">en</parameter>
     <parameter key="dossier_tests">tests</parameter>
     <parameter key="dossier_out">tests/hamza_test</parameter>
@@ -833,7 +833,7 @@
   </parameters>
   <services>
     <service id="test.test" class="TestBundle\Service\TestService"/>
-    <service id="test_project.projet_manager" class="ProjectBundle\Manager\ProjetManager">
+    <service id="test_project.projet_manager" class="ProjectBundle\Manager\ProjectManager">
       <argument type="service" id="doctrine.orm.default_entity_manager"/>
       <argument type="service" id="service_container"/>
     </service>
@@ -2095,7 +2095,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>56f3c38025f190.78075375</argument>
+            <argument>56f4123715f2b7.61361261</argument>
           </service>
         </argument>
         <argument type="service">
@@ -2119,7 +2119,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>56f3c38025f190.78075375</argument>
+            <argument>56f4123715f2b7.61361261</argument>
           </service>
         </argument>
       </argument>
@@ -2334,7 +2334,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>56f3c38025f190.78075375</argument>
+            <argument>56f4123715f2b7.61361261</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2516,7 +2516,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>56f3c38025f190.78075375</argument>
+            <argument>56f4123715f2b7.61361261</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>

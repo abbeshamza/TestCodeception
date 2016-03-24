@@ -11,6 +11,7 @@ use AppBundle\Manager\BaseManager;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Doctrine\ORM\EntityManager;
+use ProjectBundle\Entity\Projet;
 
 
 class ProjectManager extends BaseManager
@@ -27,6 +28,26 @@ class ProjectManager extends BaseManager
     public function getRepository()
     {
         return $this->em->getRepository('ProjectBundle:Projet');
+    }
+
+    public function createProjectFromRequest(Request $req)
+    {
+        $entity = new Projet();
+        $entity->setNameProject($req->get('name'));
+        $entity->setStatus($req->get('status'));
+        $entity->setFolderName();
+        return $entity;
+    }
+    public function projectValidation(Projet $projet)
+    {
+        $validator = $this->container->get('validator');
+        $errors = $validator->validate($projet);
+        if (count($errors) > 0)
+        {
+            return false ;
+        }
+        else
+           return true ;
     }
 
     public function loadProjetById($id){
