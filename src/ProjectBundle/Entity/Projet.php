@@ -86,7 +86,6 @@ class Projet extends Bundle
     /**
      * Set nomDossier
      *
-     *
      * @return Projet
      */
     public function setFolderName()

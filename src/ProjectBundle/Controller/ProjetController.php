@@ -64,8 +64,12 @@ class ProjetController extends Controller
     {
         $projectManager = $this->get('test_project.projet_manager');
         $project = $projectManager->createProjectFromRequest($req);
-        if ( !$projectManager->projectValidation($project) )
-            return new ApiResponse( $project, 201);
+        if ( $projectManager->projectValidation($project) )
+        {
+            $projectManager->addProjet($project);
+            return new ApiResponse( $project);
+        }
+
         else
             return new ApiResponse( $project, 401);
 

@@ -12,6 +12,7 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Doctrine\ORM\EntityManager;
 use ProjectBundle\Entity\Projet;
+use ProjectBundle\Form\ProjetType;
 
 
 class ProjectManager extends BaseManager
@@ -38,7 +39,7 @@ class ProjectManager extends BaseManager
         $entity->setFolderName();
         return $entity;
     }
-    public function projectValidation(Projet $projet)
+    public  function projectValidation(Projet $projet)
     {
         $validator = $this->container->get('validator');
         $errors = $validator->validate($projet);
