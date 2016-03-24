@@ -1,3 +1,4 @@
 reports/*
 app/cache/*
 app/logs/*
+vendor/*
