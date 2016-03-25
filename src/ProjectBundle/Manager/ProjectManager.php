@@ -13,10 +13,16 @@ use Symfony\Component\HttpFoundation\Request;
 use Doctrine\ORM\EntityManager;
 use ProjectBundle\Entity\Projet;
 use ProjectBundle\Form\ProjetType;
+use AppBundle\Core\CmdShell;
 
 
 class ProjectManager extends BaseManager
 {
+
+    const PATH_Project = '../tests';
+    const PATH_OUT_PUT = '';
+    const PATH_FUNCTIONAL_TEST = 'error';
+
     protected $em;
     protected $container;
 
@@ -59,7 +65,11 @@ class ProjectManager extends BaseManager
         return $this->getRepository()->findOneBy(array('name' => $name));
     }
 
-    public function addProjet($projet){
+    public function addProjet(Projet $projet){
+        $cmd= new CmdShell();
+        $cmd->createFolder("functional",$projet->getFolderName());
+        $cmd->createFolder("_output",$projet->getFolderName());
+        $cmd->createFunctionnalTest($projet->getFolderName(),"hh");
         $this->persistAndFlush($projet);
     }
 

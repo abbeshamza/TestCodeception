@@ -16,6 +16,7 @@ use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 use FOS\RestBundle\Controller\Annotations\RouteResource;
 use AppBundle\Core\ApiResponse;
 
+
 /**
  * Class ApiLegalController for legal pages
  *
@@ -67,11 +68,11 @@ class ProjetController extends Controller
         if ( $projectManager->projectValidation($project) )
         {
             $projectManager->addProjet($project);
-            return new ApiResponse( $project);
+            return new ApiResponse( $project,200);
         }
 
         else
-            return new ApiResponse( $project, 401);
+            return new ApiResponse( $project, 400);
 
 
     }

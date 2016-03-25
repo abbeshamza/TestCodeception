@@ -37,7 +37,8 @@
         "nelmio/api-doc-bundle": "^2.11",
         "lexik/jwt-authentication-bundle": "^1.4",
         "nelmio/cors-bundle": "^1.4",
-        "willdurand/hateoas-bundle": "^1.1"
+        "willdurand/hateoas-bundle": "^1.1",
+        "monolog/monolog": "^1.18"
         
     },
     "require-dev": {

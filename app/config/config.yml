@@ -10,10 +10,6 @@ imports:
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: en
-    #--------------------------------configuration des paramétres du test----------------------------------------#
-    dossier_tests: tests
-    dossier_out: tests/hamza_test
-
 
 framework:
     #esi:             ~
