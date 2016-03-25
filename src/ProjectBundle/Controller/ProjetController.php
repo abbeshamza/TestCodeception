@@ -32,11 +32,54 @@ use AppBundle\Core\ApiResponse;
  */
 class ProjetController extends Controller
 {
+
+    /**
+     * Get project
+     *
+     * @ApiDoc(
+     *     section="2. Project Services",
+     *     description="Get Project",
+     *     requirements={
+     *      {"name"="id", "dataType"="integer", "required"=true, "description"="Id Project"},
+     *      },
+     *     statusCodes={
+     *          200={
+     *            "200"="The request has succeeded"
+     *            },
+     *        400={
+     *            "40041"="Project not found",
+     *            },
+     *        500={
+     *            "5001"="An internal error has occurred"
+     *            }
+     *
+     *     }
+     * )
+     */
+    public function getAction($id, Request $request)
+    {
+        $projectManager = $this->get('test_project.projet_manager');
+        $projet = $projectManager->loadProjetById($id);
+        if ($projet != null )
+            return new ApiResponse( $projet,200);
+        else
+            return new ApiResponse( null,400);
+
+    }
+
+
+
+
+
+
+
+
+
     /**
      * Post Project
      *
      * @ApiDoc(
-     *     section="2. Projet Services",
+     *     section="2. Project Services",
      *     description="Post Project",
      *      parameters={
      *      {"name"="name", "dataType"="string", "required"=true, "description"="Name of project"},

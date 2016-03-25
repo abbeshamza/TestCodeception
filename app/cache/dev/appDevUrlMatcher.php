@@ -115,16 +115,30 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return array (  '_controller' => 'ReportingBundle\\Controller\\DefaultController::indexAction',  '_route' => 'reporting_homepage',);
             }
 
-            // restpost_projet
-            if ($pathinfo === '/rest/projets') {
-                if ($this->context->getMethod() != 'POST') {
-                    $allow[] = 'POST';
-                    goto not_restpost_projet;
-                }
+            if (0 === strpos($pathinfo, '/rest/projets')) {
+                // restget_projet
+                if (preg_match('#^/rest/projets/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'HEAD'));
+                        goto not_restget_projet;
+                    }
 
-                return array (  '_controller' => 'ProjectBundle\\Controller\\ProjetController::postAction',  '_format' => 'json',  '_route' => 'restpost_projet',);
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'restget_projet')), array (  '_controller' => 'ProjectBundle\\Controller\\ProjetController::getAction',  '_format' => 'json',));
+                }
+                not_restget_projet:
+
+                // restpost_projet
+                if ($pathinfo === '/rest/projets') {
+                    if ($this->context->getMethod() != 'POST') {
+                        $allow[] = 'POST';
+                        goto not_restpost_projet;
+                    }
+
+                    return array (  '_controller' => 'ProjectBundle\\Controller\\ProjetController::postAction',  '_format' => 'json',  '_route' => 'restpost_projet',);
+                }
+                not_restpost_projet:
+
             }
-            not_restpost_projet:
 
             // test_homepage
             if (rtrim($pathinfo, '/') === '/rest') {

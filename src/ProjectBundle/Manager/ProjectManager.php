@@ -18,11 +18,6 @@ use AppBundle\Core\CmdShell;
 
 class ProjectManager extends BaseManager
 {
-
-    const PATH_Project = '../tests';
-    const PATH_OUT_PUT = '';
-    const PATH_FUNCTIONAL_TEST = 'error';
-
     protected $em;
     protected $container;
 
